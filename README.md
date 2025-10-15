@@ -3,5 +3,5 @@ This repository contains all the resources used within the CDM Handbook for Secu
 
 The handbook is a best practice guide to how to implement the FINOS Common Domain Model (CDM) for securities lending use cases.
 
-The repository is split into directories for versions of the CDM, with each folder containing the resources and examples that pertain to that version.
+The repository is split into directries for versions of the CDM, with each folder containing the resources and examples that pertain to that version.
 
