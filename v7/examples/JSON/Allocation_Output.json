@@ -244,12 +244,6 @@
                 "value": {
                     "trade": {
                         "product": {
-                            "taxonomy": [
-                                {
-                                    "source": "ISDA",
-                                    "productQualifier": "SecurityLending"
-                                }
-                            ],
                             "economicTerms": {
                                 "effectiveDate": {
                                     "adjustableDate": {
