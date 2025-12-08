@@ -156,6 +156,19 @@
                                                 }
                                             }
                                         ]
+                                    },
+                                    {
+                                        "issuer": {
+                                            "value": "KTKL"
+                                        },
+                                        "assignedIdentifier": [
+                                            {
+                                                "identifier": {
+                                                    "value": "LEI12345ABCDE-20250922-TRADE002"
+                                                }
+                                            }
+                                        ],
+                                        "identifierType": "UniqueTransactionIdentifier"
                                     }
                                 ]
                             },
