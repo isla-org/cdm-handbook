@@ -200,7 +200,7 @@
                                             }
                                         ],
                                         "meta": {
-                                            "globalKey": "ff96713f"
+                                            "globalKey": "ff96715e"
                                         },
                                         "identifierType": "UniqueTransactionIdentifier"
                                     }
@@ -244,6 +244,12 @@
                 "value": {
                     "trade": {
                         "product": {
+                            "taxonomy": [
+                                {
+                                    "source": "ISDA",
+                                    "productQualifier": "SecurityLending"
+                                }
+                            ],
                             "economicTerms": {
                                 "effectiveDate": {
                                     "adjustableDate": {
@@ -1700,7 +1706,7 @@
                             }
                         ],
                         "meta": {
-                            "globalKey": "ff96713f"
+                            "globalKey": "ff96715e"
                         },
                         "identifierType": "UniqueTransactionIdentifier"
                     }
@@ -1797,15 +1803,15 @@
                     }
                 ],
                 "meta": {
-                    "globalKey": "b3d82a54"
+                    "globalKey": "69b7e53a"
                 }
             },
             "meta": {
-                "globalKey": "b3d82a54"
+                "globalKey": "69b7e53a"
             }
         }
     ],
     "meta": {
-        "globalKey": "4d949ef7"
+        "globalKey": "a2d62273"
     }
 }
