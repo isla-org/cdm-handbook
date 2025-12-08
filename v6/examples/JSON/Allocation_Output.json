@@ -187,6 +187,19 @@
                                         "meta": {
                                             "globalKey": "1f33a767"
                                         }
+                                    },
+                                    {
+                                        "issuer": {
+                                            "value": "KTKL"
+                                        },
+                                        "assignedIdentifier": [
+                                            {
+                                                "identifier": {
+                                                    "value": "LEI12345ABCDE-20250922-TRADE002"
+                                                }
+                                            }
+                                        ],
+                                        "identifierType": "UniqueTransactionIdentifier"
                                     }
                                 ]
                             },
@@ -1671,6 +1684,22 @@
                         "meta": {
                             "globalKey": "1f33a767"
                         }
+                    },
+                    {
+                        "issuer": {
+                            "value": "KTKL"
+                        },
+                        "assignedIdentifier": [
+                            {
+                                "identifier": {
+                                    "value": "LEI12345ABCDE-20250922-TRADE002"
+                                }
+                            }
+                        ],
+                        "meta": {
+                            "globalKey": "ff96715e"
+                        },
+                        "identifierType": "UniqueTransactionIdentifier"
                     }
                 ],
                 "tradeDate": {
