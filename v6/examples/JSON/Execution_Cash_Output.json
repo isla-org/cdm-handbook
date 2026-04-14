@@ -1,0 +1,797 @@
+{
+  "eventDate" : "2026-01-26",
+  "effectiveDate" : "2026-01-26",
+  "instruction" : [ {
+    "primitiveInstruction" : {
+      "execution" : {
+        "product" : {
+          "taxonomy" : [ {
+            "source" : "ISDA",
+            "productQualifier" : "SecurityLending"
+          } ],
+          "economicTerms" : {
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "unadjustedDate" : "2026-01-26",
+                "meta" : {
+                  "globalKey" : "3f505a"
+                }
+              },
+              "meta" : {
+                "globalKey" : "3f505a"
+              }
+            },
+            "payout" : [ {
+              "AssetPayout" : {
+                "payerReceiver" : {
+                  "payer" : "Party2",
+                  "receiver" : "Party1"
+                },
+                "priceQuantity" : {
+                  "quantitySchedule" : {
+                    "address" : {
+                      "scope" : "DOCUMENT",
+                      "value" : "AssetQuantity-1"
+                    }
+                  },
+                  "priceSchedule" : [ {
+                    "address" : {
+                      "scope" : "DOCUMENT",
+                      "value" : "AssetPrice-1"
+                    }
+                  } ],
+                  "meta" : {
+                    "globalKey" : "0"
+                  }
+                },
+                "assetLeg" : [ {
+                  "settlementDate" : {
+                    "adjustableDate" : {
+                      "adjustedDate" : {
+                        "value" : "2026-01-27",
+                        "meta" : {
+                          "globalKey" : "3f505b"
+                        }
+                      },
+                      "meta" : {
+                        "globalKey" : "0"
+                      }
+                    },
+                    "meta" : {
+                      "globalKey" : "0"
+                    }
+                  },
+                  "deliveryMethod" : "DeliveryVersusPayment"
+                } ],
+                "underlier" : {
+                  "Instrument" : {
+                    "Security" : {
+                      "identifier" : [ {
+                        "identifier" : {
+                          "value" : "GB00BDR05C01"
+                        },
+                        "identifierType" : "ISIN"
+                      } ],
+                      "instrumentType" : "Equity"
+                    }
+                  }
+                },
+                "minimumFee" : {
+                  "value" : 50,
+                  "unit" : {
+                    "currency" : {
+                      "value" : "USD"
+                    }
+                  },
+                  "meta" : {
+                    "globalKey" : "301f8eb"
+                  }
+                }
+              },
+              "meta" : {
+                "globalKey" : "43b0f5aa"
+              }
+            } ],
+            "collateral" : {
+              "collateralPortfolio" : [ {
+                "value" : {
+                  "collateralPosition" : [ {
+                    "priceQuantity" : [ {
+                      "price" : [ {
+                        "value" : {
+                          "value" : 0.00555,
+                          "unit" : {
+                            "currency" : {
+                              "value" : "GBP"
+                            }
+                          },
+                          "perUnitOf" : {
+                            "currency" : {
+                              "value" : "GBP"
+                            }
+                          },
+                          "priceType" : "InterestRate"
+                        }
+                      } ],
+                      "quantity" : [ {
+                        "value" : {
+                          "value" : 10200000,
+                          "unit" : {
+                            "currency" : {
+                              "value" : "GBP"
+                            }
+                          }
+                        }
+                      } ],
+                      "meta" : {
+                        "globalKey" : "5541edd6"
+                      }
+                    } ],
+                    "product" : {
+                      "TransferableProduct" : {
+                        "Cash" : {
+                          "identifier" : [ {
+                            "identifier" : {
+                              "value" : "GBP"
+                            },
+                            "identifierType" : "CurrencyCode"
+                          } ]
+                        },
+                        "economicTerms" : {
+                          "payout" : [ {
+                            "InterestRatePayout" : {
+                              "payerReceiver" : {
+                                "payer" : "Party1",
+                                "receiver" : "Party2"
+                              },
+                              "priceQuantity" : {
+                                "quantitySchedule" : {
+                                  "address" : {
+                                    "scope" : "DOCUMENT",
+                                    "value" : "CollateralValue-1"
+                                  }
+                                },
+                                "priceSchedule" : [ {
+                                  "address" : {
+                                    "scope" : "DOCUMENT",
+                                    "value" : "InterestRate-1"
+                                  }
+                                } ],
+                                "meta" : {
+                                  "globalKey" : "0"
+                                }
+                              }
+                            },
+                            "meta" : {
+                              "globalKey" : "b141411f"
+                            }
+                          } ]
+                        }
+                      }
+                    }
+                  } ],
+                  "meta" : {
+                    "globalKey" : "9e6fa08f"
+                  }
+                }
+              } ],
+              "collateralProvisions" : {
+                "collateralType" : "Cash",
+                "eligibleCollateral" : [ {
+                  "collateralCriteria" : {
+                    "AssetType" : {
+                      "assetType" : "Cash"
+                    }
+                  },
+                  "treatment" : {
+                    "valuationTreatment" : {
+                      "marginPercentage" : 1.02
+                    },
+                    "isIncluded" : true
+                  }
+                } ]
+              },
+              "meta" : {
+                "globalKey" : "a68ad385"
+              }
+            }
+          },
+          "meta" : {
+            "globalKey" : "d90bcd75"
+          }
+        },
+        "priceQuantity" : [ {
+          "price" : [ {
+            "value" : {
+              "value" : 0.00555,
+              "unit" : {
+                "currency" : {
+                  "value" : "GBP"
+                }
+              },
+              "perUnitOf" : {
+                "currency" : {
+                  "value" : "GBP"
+                }
+              },
+              "priceType" : "InterestRate"
+            },
+            "meta" : {
+              "location" : [ {
+                "scope" : "DOCUMENT",
+                "value" : "InterestRate-1"
+              } ]
+            }
+          } ],
+          "quantity" : [ {
+            "value" : {
+              "value" : 10200000,
+              "unit" : {
+                "currency" : {
+                  "value" : "GBP"
+                }
+              }
+            },
+            "meta" : {
+              "location" : [ {
+                "scope" : "DOCUMENT",
+                "value" : "CollateralValue-1"
+              } ]
+            }
+          } ],
+          "meta" : {
+            "globalKey" : "2aa2b226"
+          }
+        }, {
+          "price" : [ {
+            "value" : {
+              "value" : 10,
+              "unit" : {
+                "currency" : {
+                  "value" : "GBP"
+                }
+              },
+              "perUnitOf" : {
+                "financialUnit" : "Share"
+              },
+              "priceType" : "AssetPrice"
+            },
+            "meta" : {
+              "location" : [ {
+                "scope" : "DOCUMENT",
+                "value" : "AssetPrice-1"
+              } ]
+            }
+          } ],
+          "quantity" : [ {
+            "value" : {
+              "value" : 1000000,
+              "unit" : {
+                "financialUnit" : "Share"
+              }
+            },
+            "meta" : {
+              "location" : [ {
+                "scope" : "DOCUMENT",
+                "value" : "AssetQuantity-1"
+              } ]
+            }
+          } ],
+          "observable" : {
+            "value" : {
+              "Asset" : {
+                "Instrument" : {
+                  "Security" : {
+                    "identifier" : [ {
+                      "identifier" : {
+                        "value" : "GB00BDR05C01"
+                      },
+                      "identifierType" : "ISIN"
+                    } ],
+                    "instrumentType" : "Equity"
+                  }
+                }
+              }
+            },
+            "meta" : {
+              "location" : [ {
+                "scope" : "DOCUMENT",
+                "value" : "Observable-1"
+              } ]
+            }
+          },
+          "meta" : {
+            "globalKey" : "b84b5a35"
+          }
+        } ],
+        "counterparty" : [ {
+          "role" : "Party1",
+          "partyReference" : {
+            "globalReference" : "77c2fb0c",
+            "externalReference" : "UKLender"
+          }
+        }, {
+          "role" : "Party2",
+          "partyReference" : {
+            "globalReference" : "35eea94f",
+            "externalReference" : "UKBroker"
+          }
+        } ],
+        "parties" : [ {
+          "partyId" : [ {
+            "identifier" : {
+              "value" : "FM1LEI11111111111111"
+            },
+            "meta" : {
+              "globalKey" : "87c4d1c6"
+            }
+          } ],
+          "name" : {
+            "value" : "UK Lender"
+          },
+          "meta" : {
+            "globalKey" : "77c2fb0c",
+            "externalKey" : "UKLender"
+          }
+        }, {
+          "partyId" : [ {
+            "identifier" : {
+              "value" : "CP001LEI111111111111"
+            },
+            "meta" : {
+              "globalKey" : "12818f8c"
+            }
+          } ],
+          "name" : {
+            "value" : "UK Broker"
+          },
+          "meta" : {
+            "globalKey" : "35eea94f",
+            "externalKey" : "UKBroker"
+          }
+        } ],
+        "partyRoles" : [ {
+          "partyReference" : {
+            "globalReference" : "77c2fb0c",
+            "externalReference" : "UKLender"
+          },
+          "role" : "Lender"
+        }, {
+          "partyReference" : {
+            "globalReference" : "35eea94f",
+            "externalReference" : "UKBroker"
+          },
+          "role" : "Borrower"
+        } ],
+        "executionDetails" : {
+          "executionType" : "OnVenue",
+          "meta" : {
+            "globalKey" : "d39bbbef"
+          }
+        },
+        "tradeDate" : {
+          "value" : "2026-01-26",
+          "meta" : {
+            "globalKey" : "3f505a"
+          }
+        },
+        "tradeIdentifier" : [ {
+          "issuer" : {
+            "value" : "UK Broker"
+          },
+          "assignedIdentifier" : [ {
+            "identifier" : {
+              "value" : "20445678222"
+            }
+          } ],
+          "meta" : {
+            "globalKey" : "4b475acf"
+          }
+        } ]
+      }
+    }
+  } ],
+  "eventQualifier" : "Execution",
+  "after" : [ {
+    "trade" : {
+      "product" : {
+        "taxonomy" : [ {
+          "source" : "ISDA",
+          "productQualifier" : "SecurityLending"
+        } ],
+        "economicTerms" : {
+          "effectiveDate" : {
+            "adjustableDate" : {
+              "unadjustedDate" : "2026-01-26",
+              "meta" : {
+                "globalKey" : "3f505a"
+              }
+            },
+            "meta" : {
+              "globalKey" : "3f505a"
+            }
+          },
+          "payout" : [ {
+            "AssetPayout" : {
+              "payerReceiver" : {
+                "payer" : "Party2",
+                "receiver" : "Party1"
+              },
+              "priceQuantity" : {
+                "quantitySchedule" : {
+                  "address" : {
+                    "scope" : "DOCUMENT",
+                    "value" : "AssetQuantity-1"
+                  }
+                },
+                "priceSchedule" : [ {
+                  "address" : {
+                    "scope" : "DOCUMENT",
+                    "value" : "AssetPrice-1"
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "0"
+                }
+              },
+              "assetLeg" : [ {
+                "settlementDate" : {
+                  "adjustableDate" : {
+                    "adjustedDate" : {
+                      "value" : "2026-01-27",
+                      "meta" : {
+                        "globalKey" : "3f505b"
+                      }
+                    },
+                    "meta" : {
+                      "globalKey" : "0"
+                    }
+                  },
+                  "meta" : {
+                    "globalKey" : "0"
+                  }
+                },
+                "deliveryMethod" : "DeliveryVersusPayment"
+              } ],
+              "underlier" : {
+                "Instrument" : {
+                  "Security" : {
+                    "identifier" : [ {
+                      "identifier" : {
+                        "value" : "GB00BDR05C01"
+                      },
+                      "identifierType" : "ISIN"
+                    } ],
+                    "instrumentType" : "Equity"
+                  }
+                }
+              },
+              "minimumFee" : {
+                "value" : 50,
+                "unit" : {
+                  "currency" : {
+                    "value" : "USD"
+                  }
+                },
+                "meta" : {
+                  "globalKey" : "301f8eb"
+                }
+              }
+            },
+            "meta" : {
+              "globalKey" : "43b0f5aa"
+            }
+          } ],
+          "collateral" : {
+            "collateralPortfolio" : [ {
+              "value" : {
+                "collateralPosition" : [ {
+                  "priceQuantity" : [ {
+                    "price" : [ {
+                      "value" : {
+                        "value" : 0.00555,
+                        "unit" : {
+                          "currency" : {
+                            "value" : "GBP"
+                          }
+                        },
+                        "perUnitOf" : {
+                          "currency" : {
+                            "value" : "GBP"
+                          }
+                        },
+                        "priceType" : "InterestRate"
+                      }
+                    } ],
+                    "quantity" : [ {
+                      "value" : {
+                        "value" : 10200000,
+                        "unit" : {
+                          "currency" : {
+                            "value" : "GBP"
+                          }
+                        }
+                      }
+                    } ],
+                    "meta" : {
+                      "globalKey" : "5541edd6"
+                    }
+                  } ],
+                  "product" : {
+                    "TransferableProduct" : {
+                      "Cash" : {
+                        "identifier" : [ {
+                          "identifier" : {
+                            "value" : "GBP"
+                          },
+                          "identifierType" : "CurrencyCode"
+                        } ]
+                      },
+                      "economicTerms" : {
+                        "payout" : [ {
+                          "InterestRatePayout" : {
+                            "payerReceiver" : {
+                              "payer" : "Party1",
+                              "receiver" : "Party2"
+                            },
+                            "priceQuantity" : {
+                              "quantitySchedule" : {
+                                "address" : {
+                                  "scope" : "DOCUMENT",
+                                  "value" : "CollateralValue-1"
+                                }
+                              },
+                              "priceSchedule" : [ {
+                                "address" : {
+                                  "scope" : "DOCUMENT",
+                                  "value" : "InterestRate-1"
+                                }
+                              } ],
+                              "meta" : {
+                                "globalKey" : "0"
+                              }
+                            }
+                          },
+                          "meta" : {
+                            "globalKey" : "b141411f"
+                          }
+                        } ]
+                      }
+                    }
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "9e6fa08f"
+                }
+              }
+            } ],
+            "collateralProvisions" : {
+              "collateralType" : "Cash",
+              "eligibleCollateral" : [ {
+                "collateralCriteria" : {
+                  "AssetType" : {
+                    "assetType" : "Cash"
+                  }
+                },
+                "treatment" : {
+                  "valuationTreatment" : {
+                    "marginPercentage" : 1.02
+                  },
+                  "isIncluded" : true
+                }
+              } ]
+            },
+            "meta" : {
+              "globalKey" : "a68ad385"
+            }
+          }
+        },
+        "meta" : {
+          "globalKey" : "d90bcd75"
+        }
+      },
+      "tradeLot" : [ {
+        "priceQuantity" : [ {
+          "price" : [ {
+            "value" : {
+              "value" : 0.00555,
+              "unit" : {
+                "currency" : {
+                  "value" : "GBP"
+                }
+              },
+              "perUnitOf" : {
+                "currency" : {
+                  "value" : "GBP"
+                }
+              },
+              "priceType" : "InterestRate"
+            },
+            "meta" : {
+              "location" : [ {
+                "scope" : "DOCUMENT",
+                "value" : "InterestRate-1"
+              } ]
+            }
+          } ],
+          "quantity" : [ {
+            "value" : {
+              "value" : 10200000,
+              "unit" : {
+                "currency" : {
+                  "value" : "GBP"
+                }
+              }
+            },
+            "meta" : {
+              "location" : [ {
+                "scope" : "DOCUMENT",
+                "value" : "CollateralValue-1"
+              } ]
+            }
+          } ],
+          "meta" : {
+            "globalKey" : "2aa2b226"
+          }
+        }, {
+          "price" : [ {
+            "value" : {
+              "value" : 10,
+              "unit" : {
+                "currency" : {
+                  "value" : "GBP"
+                }
+              },
+              "perUnitOf" : {
+                "financialUnit" : "Share"
+              },
+              "priceType" : "AssetPrice"
+            },
+            "meta" : {
+              "location" : [ {
+                "scope" : "DOCUMENT",
+                "value" : "AssetPrice-1"
+              } ]
+            }
+          } ],
+          "quantity" : [ {
+            "value" : {
+              "value" : 1000000,
+              "unit" : {
+                "financialUnit" : "Share"
+              }
+            },
+            "meta" : {
+              "location" : [ {
+                "scope" : "DOCUMENT",
+                "value" : "AssetQuantity-1"
+              } ]
+            }
+          } ],
+          "observable" : {
+            "value" : {
+              "Asset" : {
+                "Instrument" : {
+                  "Security" : {
+                    "identifier" : [ {
+                      "identifier" : {
+                        "value" : "GB00BDR05C01"
+                      },
+                      "identifierType" : "ISIN"
+                    } ],
+                    "instrumentType" : "Equity"
+                  }
+                }
+              }
+            },
+            "meta" : {
+              "location" : [ {
+                "scope" : "DOCUMENT",
+                "value" : "Observable-1"
+              } ]
+            }
+          },
+          "meta" : {
+            "globalKey" : "b84b5a35"
+          }
+        } ]
+      } ],
+      "counterparty" : [ {
+        "role" : "Party1",
+        "partyReference" : {
+          "globalReference" : "77c2fb0c",
+          "externalReference" : "UKLender"
+        }
+      }, {
+        "role" : "Party2",
+        "partyReference" : {
+          "globalReference" : "35eea94f",
+          "externalReference" : "UKBroker"
+        }
+      } ],
+      "tradeIdentifier" : [ {
+        "issuer" : {
+          "value" : "UK Broker"
+        },
+        "assignedIdentifier" : [ {
+          "identifier" : {
+            "value" : "20445678222"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "4b475acf"
+        }
+      } ],
+      "tradeDate" : {
+        "value" : "2026-01-26",
+        "meta" : {
+          "globalKey" : "3f505a"
+        }
+      },
+      "party" : [ {
+        "partyId" : [ {
+          "identifier" : {
+            "value" : "FM1LEI11111111111111"
+          },
+          "meta" : {
+            "globalKey" : "87c4d1c6"
+          }
+        } ],
+        "name" : {
+          "value" : "UK Lender"
+        },
+        "meta" : {
+          "globalKey" : "77c2fb0c",
+          "externalKey" : "UKLender"
+        }
+      }, {
+        "partyId" : [ {
+          "identifier" : {
+            "value" : "CP001LEI111111111111"
+          },
+          "meta" : {
+            "globalKey" : "12818f8c"
+          }
+        } ],
+        "name" : {
+          "value" : "UK Broker"
+        },
+        "meta" : {
+          "globalKey" : "35eea94f",
+          "externalKey" : "UKBroker"
+        }
+      } ],
+      "partyRole" : [ {
+        "partyReference" : {
+          "globalReference" : "77c2fb0c",
+          "externalReference" : "UKLender"
+        },
+        "role" : "Lender"
+      }, {
+        "partyReference" : {
+          "globalReference" : "35eea94f",
+          "externalReference" : "UKBroker"
+        },
+        "role" : "Borrower"
+      } ],
+      "executionDetails" : {
+        "executionType" : "OnVenue",
+        "meta" : {
+          "globalKey" : "d39bbbef"
+        }
+      },
+      "meta" : {
+        "globalKey" : "ca01f46c"
+      }
+    },
+    "state" : {
+      "positionState" : "Executed"
+    },
+    "meta" : {
+      "globalKey" : "f9c270fb"
+    }
+  } ],
+  "meta" : {
+    "globalKey" : "8fb1fb99"
+  }
+}
