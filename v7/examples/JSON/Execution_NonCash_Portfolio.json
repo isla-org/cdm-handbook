@@ -32,7 +32,8 @@
 										"underlier": {
 											"Instrument": {
 												"Security": {
-													"instrumentType": "Equity",
+													"aasetType": "Security",
+													"securityType": "Equity",
 													"identifier": [
 														{
 															"identifier": {
@@ -202,7 +203,8 @@
 									"Asset": {
 										"Instrument": {
 											"Security": {
-												"instrumentType": "Equity",
+												"assetType": "Security",
+												"assetType": "Equity",
 												"identifier": [
 													{
 														"identifier": {
