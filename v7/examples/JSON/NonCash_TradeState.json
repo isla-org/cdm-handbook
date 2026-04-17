@@ -77,7 +77,8 @@
                                                 "identifierType": "ISIN"
                                             }
                                         ],
-                                        "instrumentType": "Equity"
+                                        "assetType": "Security",
+                                        "securityType": "Equity"
                                     }
                                 }
                             },
@@ -245,7 +246,8 @@
                                                     "identifierType": "ISIN"
                                                 }
                                             ],
-                                            "instrumentType": "Equity"
+                                            "assetType": "Security",
+                                            "securityType": "Equity"
                                         }
                                     }
                                 }
