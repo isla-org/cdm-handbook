@@ -323,7 +323,8 @@
                                                                 "identifierType": "SEDOL"
                                                             }
                                                         ],
-                                                        "instrumentType": "Equity"
+                                                        "assetType": "Security",
+                                                        "securityType": "Equity"
                                                     }
                                                 }
                                             },
@@ -395,6 +396,7 @@
                                                         "product": {
                                                             "TransferableProduct": {
                                                                 "Cash": {
+                                                                    "assetType": "Cash",
                                                                     "identifier": [
                                                                         {
                                                                             "identifier": {
@@ -519,7 +521,8 @@
                                                                     "identifierType": "SEDOL"
                                                                 }
                                                             ],
-                                                            "instrumentType": "Equity"
+                                                            "assetType": "Security",
+                                                            "securityType": "Equity"
                                                         }
                                                     }
                                                 }
