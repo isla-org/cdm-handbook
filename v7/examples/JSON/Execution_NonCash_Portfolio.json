@@ -204,7 +204,7 @@
 										"Instrument": {
 											"Security": {
 												"assetType": "Security",
-												"assetType": "Equity",
+												"securityType": "Equity",
 												"identifier": [
 													{
 														"identifier": {
