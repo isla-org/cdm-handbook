@@ -32,7 +32,7 @@
 										"underlier": {
 											"Instrument": {
 												"Security": {
-													"aasetType": "Security",
+													"assetType": "Security",
 													"securityType": "Equity",
 													"identifier": [
 														{
