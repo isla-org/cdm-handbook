@@ -44,6 +44,20 @@
                     "globalKey" : "0"
                   }
                 },
+                "settlementTerms" : {
+                  "settlementType" : "Physical",
+                  "settlementDate" : {
+                    "adjustableOrRelativeDate" : {
+                      "unadjustedDate" : "2026-01-27"
+                    },
+                    "meta" : {
+                      "globalKey" : "3f505b"
+                    }
+                  },
+                  "meta" : {
+                    "globalKey" : "1dd3c24"
+                  }
+                },
                 "assetLeg" : [ {
                   "settlementDate" : {
                     "adjustableDate" : {
@@ -89,7 +103,7 @@
                 }
               },
               "meta" : {
-                "globalKey" : "43b0f5aa"
+                "globalKey" : "98a71ea8"
               }
             } ],
             "collateral" : {
@@ -160,10 +174,33 @@
                                 "meta" : {
                                   "globalKey" : "0"
                                 }
+                              },
+                              "settlementTerms" : {
+                                "settlementType" : "Cash",
+                                "transferSettlementType" : "DeliveryVersusPayment",
+                                "settlementDate" : {
+                                  "adjustableDates" : {
+                                    "adjustedDate" : [ {
+                                      "value" : "2026-01-27",
+                                      "meta" : {
+                                        "globalKey" : "3f505b"
+                                      }
+                                    } ],
+                                    "meta" : {
+                                      "globalKey" : "0"
+                                    }
+                                  },
+                                  "meta" : {
+                                    "globalKey" : "0"
+                                  }
+                                },
+                                "meta" : {
+                                  "globalKey" : "514caa0d"
+                                }
                               }
                             },
                             "meta" : {
-                              "globalKey" : "b141411f"
+                              "globalKey" : "6092444e"
                             }
                           } ]
                         }
@@ -171,7 +208,7 @@
                     }
                   } ],
                   "meta" : {
-                    "globalKey" : "9e6fa08f"
+                    "globalKey" : "5ba60ade"
                   }
                 }
               } ],
@@ -192,12 +229,12 @@
                 } ]
               },
               "meta" : {
-                "globalKey" : "a68ad385"
+                "globalKey" : "7cd7e714"
               }
             }
           },
           "meta" : {
-            "globalKey" : "d90bcd75"
+            "globalKey" : "1799e696"
           }
         },
         "priceQuantity" : [ {
@@ -434,6 +471,20 @@
                   "globalKey" : "0"
                 }
               },
+              "settlementTerms" : {
+                "settlementType" : "Physical",
+                "settlementDate" : {
+                  "adjustableOrRelativeDate" : {
+                    "unadjustedDate" : "2026-01-27"
+                  },
+                  "meta" : {
+                    "globalKey" : "3f505b"
+                  }
+                },
+                "meta" : {
+                  "globalKey" : "1dd3c24"
+                }
+              },
               "assetLeg" : [ {
                 "settlementDate" : {
                   "adjustableDate" : {
@@ -479,7 +530,7 @@
               }
             },
             "meta" : {
-              "globalKey" : "43b0f5aa"
+              "globalKey" : "98a71ea8"
             }
           } ],
           "collateral" : {
@@ -550,10 +601,33 @@
                               "meta" : {
                                 "globalKey" : "0"
                               }
+                            },
+                            "settlementTerms" : {
+                              "settlementType" : "Cash",
+                              "transferSettlementType" : "DeliveryVersusPayment",
+                              "settlementDate" : {
+                                "adjustableDates" : {
+                                  "adjustedDate" : [ {
+                                    "value" : "2026-01-27",
+                                    "meta" : {
+                                      "globalKey" : "3f505b"
+                                    }
+                                  } ],
+                                  "meta" : {
+                                    "globalKey" : "0"
+                                  }
+                                },
+                                "meta" : {
+                                  "globalKey" : "0"
+                                }
+                              },
+                              "meta" : {
+                                "globalKey" : "514caa0d"
+                              }
                             }
                           },
                           "meta" : {
-                            "globalKey" : "b141411f"
+                            "globalKey" : "6092444e"
                           }
                         } ]
                       }
@@ -561,7 +635,7 @@
                   }
                 } ],
                 "meta" : {
-                  "globalKey" : "9e6fa08f"
+                  "globalKey" : "5ba60ade"
                 }
               }
             } ],
@@ -582,12 +656,12 @@
               } ]
             },
             "meta" : {
-              "globalKey" : "a68ad385"
+              "globalKey" : "7cd7e714"
             }
           }
         },
         "meta" : {
-          "globalKey" : "d90bcd75"
+          "globalKey" : "1799e696"
         }
       },
       "tradeLot" : [ {
@@ -781,17 +855,17 @@
         }
       },
       "meta" : {
-        "globalKey" : "ca01f46c"
+        "globalKey" : "91bbab0d"
       }
     },
     "state" : {
       "positionState" : "Executed"
     },
     "meta" : {
-      "globalKey" : "f9c270fb"
+      "globalKey" : "b9e9035c"
     }
   } ],
   "meta" : {
-    "globalKey" : "8fb1fb99"
+    "globalKey" : "846f1ddb"
   }
 }
