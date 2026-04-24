@@ -14,8 +14,8 @@
 								{
 									"AssetPayout": {
 										"payerReceiver": {
-											"payer": "Party2",
-											"receiver": "Party1"
+											"payer": "Party1",
+											"receiver": "Party2"
 										},
 										"assetLeg": [
 											{
