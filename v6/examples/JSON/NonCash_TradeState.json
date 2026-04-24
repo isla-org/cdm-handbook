@@ -17,8 +17,8 @@
                     {
                         "AssetPayout": {
                             "payerReceiver": {
-                                "payer": "Party2",
-                                "receiver": "Party1"
+                                "payer": "Party1",
+                                "receiver": "Party2"
                             },
                             "priceQuantity": {
                                 "quantitySchedule": {
@@ -108,7 +108,7 @@
                             }
                         },
                         "meta": {
-                            "globalKey": "aec596de"
+                            "globalKey": "2696d8bc"
                         }
                     }
                 ],
@@ -146,7 +146,7 @@
                 }
             },
             "meta": {
-                "globalKey": "190ca978"
+                "globalKey": "ba630da"
             }
         },
         "tradeLot": [
@@ -382,13 +382,13 @@
             }
         },
         "meta": {
-            "globalKey": "3877aacf"
+            "globalKey": "b2d19d31"
         }
     },
     "state": {
         "positionState": "Executed"
     },
     "meta": {
-        "globalKey": "a1a41a9e"
+        "globalKey": "ed4afc80"
     }
 }
