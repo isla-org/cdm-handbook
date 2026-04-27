@@ -244,6 +244,12 @@
                 "value": {
                     "trade": {
                         "product": {
+                            "taxonomy": [
+                                {
+                                    "source": "ISDA",
+                                    "productQualifier": "SecurityLending"
+                                }
+                            ],
                             "economicTerms": {
                                 "effectiveDate": {
                                     "adjustableDate": {
@@ -295,6 +301,20 @@
                                                 },
                                                 "meta": {
                                                     "globalKey": "0"
+                                                }
+                                            },
+                                            "settlementTerms": {
+                                                "settlementType": "Physical",
+                                                "settlementDate": {
+                                                    "adjustableOrRelativeDate": {
+                                                        "unadjustedDate": "2025-09-22"
+                                                    },
+                                                    "meta": {
+                                                        "globalKey": "3f4a56"
+                                                    }
+                                                },
+                                                "meta": {
+                                                    "globalKey": "1dd361f"
                                                 }
                                             },
                                             "assetLeg": [
@@ -382,7 +402,7 @@
                                             }
                                         },
                                         "meta": {
-                                            "globalKey": "b78e4420"
+                                            "globalKey": "89dc57e1"
                                         }
                                     }
                                 ],
@@ -446,8 +466,8 @@
                                                                         {
                                                                             "InterestRatePayout": {
                                                                                 "payerReceiver": {
-                                                                                    "payer": "Party1",
-                                                                                    "receiver": "Party2"
+                                                                                    "payer": "Party2",
+                                                                                    "receiver": "Party1"
                                                                                 },
                                                                                 "priceQuantity": {
                                                                                     "quantitySchedule": {
@@ -467,10 +487,35 @@
                                                                                     "meta": {
                                                                                         "globalKey": "0"
                                                                                     }
+                                                                                },
+                                                                                "settlementTerms": {
+                                                                                    "settlementType": "Cash",
+                                                                                    "transferSettlementType": "DeliveryVersusPayment",
+                                                                                    "settlementDate": {
+                                                                                        "adjustableDates": {
+                                                                                            "adjustedDate": [
+                                                                                                {
+                                                                                                    "value": "2025-09-22",
+                                                                                                    "meta": {
+                                                                                                        "globalKey": "3f4a56"
+                                                                                                    }
+                                                                                                }
+                                                                                            ],
+                                                                                            "meta": {
+                                                                                                "globalKey": "0"
+                                                                                            }
+                                                                                        },
+                                                                                        "meta": {
+                                                                                            "globalKey": "0"
+                                                                                        }
+                                                                                    },
+                                                                                    "meta": {
+                                                                                        "globalKey": "514caa0d"
+                                                                                    }
                                                                                 }
                                                                             },
                                                                             "meta": {
-                                                                                "globalKey": "b141411f"
+                                                                                "globalKey": "938d35ec"
                                                                             }
                                                                         }
                                                                     ]
@@ -480,7 +525,7 @@
                                                     }
                                                 ],
                                                 "meta": {
-                                                    "globalKey": "8d61c8ba"
+                                                    "globalKey": "b2283731"
                                                 }
                                             }
                                         }
@@ -489,12 +534,12 @@
                                         "collateralType": "Cash"
                                     },
                                     "meta": {
-                                        "globalKey": "bc31f56d"
+                                        "globalKey": "c916a224"
                                     }
                                 }
                             },
                             "meta": {
-                                "globalKey": "db94e9ed"
+                                "globalKey": "f5ae6d65"
                             }
                         },
                         "tradeLot": [
@@ -708,14 +753,14 @@
                             }
                         ],
                         "meta": {
-                            "globalKey": "2fe8d04b"
+                            "globalKey": "a2dcd760"
                         }
                     },
                     "state": {
                         "positionState": "Executed"
                     },
                     "meta": {
-                        "globalKey": "8161d11a"
+                        "globalKey": "77066ef"
                     }
                 }
             }
@@ -782,6 +827,20 @@
                                         },
                                         "meta": {
                                             "globalKey": "0"
+                                        }
+                                    },
+                                    "settlementTerms": {
+                                        "settlementType": "Physical",
+                                        "settlementDate": {
+                                            "adjustableOrRelativeDate": {
+                                                "unadjustedDate": "2025-09-22"
+                                            },
+                                            "meta": {
+                                                "globalKey": "3f4a56"
+                                            }
+                                        },
+                                        "meta": {
+                                            "globalKey": "1dd361f"
                                         }
                                     },
                                     "assetLeg": [
@@ -869,7 +928,7 @@
                                     }
                                 },
                                 "meta": {
-                                    "globalKey": "b78e4420"
+                                    "globalKey": "89dc57e1"
                                 }
                             }
                         ],
@@ -933,8 +992,8 @@
                                                                 {
                                                                     "InterestRatePayout": {
                                                                         "payerReceiver": {
-                                                                            "payer": "Party1",
-                                                                            "receiver": "Party2"
+                                                                            "payer": "Party2",
+                                                                            "receiver": "Party1"
                                                                         },
                                                                         "priceQuantity": {
                                                                             "quantitySchedule": {
@@ -954,10 +1013,35 @@
                                                                             "meta": {
                                                                                 "globalKey": "0"
                                                                             }
+                                                                        },
+                                                                        "settlementTerms": {
+                                                                            "settlementType": "Cash",
+                                                                            "transferSettlementType": "DeliveryVersusPayment",
+                                                                            "settlementDate": {
+                                                                                "adjustableDates": {
+                                                                                    "adjustedDate": [
+                                                                                        {
+                                                                                            "value": "2025-09-22",
+                                                                                            "meta": {
+                                                                                                "globalKey": "3f4a56"
+                                                                                            }
+                                                                                        }
+                                                                                    ],
+                                                                                    "meta": {
+                                                                                        "globalKey": "0"
+                                                                                    }
+                                                                                },
+                                                                                "meta": {
+                                                                                    "globalKey": "0"
+                                                                                }
+                                                                            },
+                                                                            "meta": {
+                                                                                "globalKey": "514caa0d"
+                                                                            }
                                                                         }
                                                                     },
                                                                     "meta": {
-                                                                        "globalKey": "b141411f"
+                                                                        "globalKey": "938d35ec"
                                                                     }
                                                                 }
                                                             ]
@@ -967,7 +1051,7 @@
                                             }
                                         ],
                                         "meta": {
-                                            "globalKey": "8d61c8ba"
+                                            "globalKey": "b2283731"
                                         }
                                     }
                                 }
@@ -976,12 +1060,12 @@
                                 "collateralType": "Cash"
                             },
                             "meta": {
-                                "globalKey": "bc31f56d"
+                                "globalKey": "c916a224"
                             }
                         }
                     },
                     "meta": {
-                        "globalKey": "db94e9ed"
+                        "globalKey": "f5ae6d65"
                     }
                 },
                 "tradeLot": [
@@ -1194,19 +1278,19 @@
                         "partyId": [
                             {
                                 "identifier": {
-                                    "value": "CP001LEI111111111111"
+                                    "value": "FUND1"
                                 },
                                 "meta": {
-                                    "globalKey": "12818f8c"
+                                    "globalKey": "4023e0c"
                                 }
                             }
                         ],
                         "name": {
-                            "value": "CP001(Borrower)"
+                            "value": "Fund 1"
                         },
                         "meta": {
-                            "globalKey": "2e189ef",
-                            "externalKey": "Borrower"
+                            "globalKey": "8a8260c2",
+                            "externalKey": "fund-1"
                         }
                     },
                     {
@@ -1256,11 +1340,11 @@
                     }
                 ],
                 "meta": {
-                    "globalKey": "1311e6c4"
+                    "globalKey": "b0a995bb"
                 }
             },
             "meta": {
-                "globalKey": "1311e6c4"
+                "globalKey": "b0a995bb"
             }
         },
         {
@@ -1323,6 +1407,20 @@
                                         },
                                         "meta": {
                                             "globalKey": "0"
+                                        }
+                                    },
+                                    "settlementTerms": {
+                                        "settlementType": "Physical",
+                                        "settlementDate": {
+                                            "adjustableOrRelativeDate": {
+                                                "unadjustedDate": "2025-09-22"
+                                            },
+                                            "meta": {
+                                                "globalKey": "3f4a56"
+                                            }
+                                        },
+                                        "meta": {
+                                            "globalKey": "1dd361f"
                                         }
                                     },
                                     "assetLeg": [
@@ -1410,7 +1508,7 @@
                                     }
                                 },
                                 "meta": {
-                                    "globalKey": "b78e4420"
+                                    "globalKey": "89dc57e1"
                                 }
                             }
                         ],
@@ -1474,8 +1572,8 @@
                                                                 {
                                                                     "InterestRatePayout": {
                                                                         "payerReceiver": {
-                                                                            "payer": "Party1",
-                                                                            "receiver": "Party2"
+                                                                            "payer": "Party2",
+                                                                            "receiver": "Party1"
                                                                         },
                                                                         "priceQuantity": {
                                                                             "quantitySchedule": {
@@ -1495,10 +1593,35 @@
                                                                             "meta": {
                                                                                 "globalKey": "0"
                                                                             }
+                                                                        },
+                                                                        "settlementTerms": {
+                                                                            "settlementType": "Cash",
+                                                                            "transferSettlementType": "DeliveryVersusPayment",
+                                                                            "settlementDate": {
+                                                                                "adjustableDates": {
+                                                                                    "adjustedDate": [
+                                                                                        {
+                                                                                            "value": "2025-09-22",
+                                                                                            "meta": {
+                                                                                                "globalKey": "3f4a56"
+                                                                                            }
+                                                                                        }
+                                                                                    ],
+                                                                                    "meta": {
+                                                                                        "globalKey": "0"
+                                                                                    }
+                                                                                },
+                                                                                "meta": {
+                                                                                    "globalKey": "0"
+                                                                                }
+                                                                            },
+                                                                            "meta": {
+                                                                                "globalKey": "514caa0d"
+                                                                            }
                                                                         }
                                                                     },
                                                                     "meta": {
-                                                                        "globalKey": "b141411f"
+                                                                        "globalKey": "938d35ec"
                                                                     }
                                                                 }
                                                             ]
@@ -1508,7 +1631,7 @@
                                             }
                                         ],
                                         "meta": {
-                                            "globalKey": "8d61c8ba"
+                                            "globalKey": "b2283731"
                                         }
                                     }
                                 }
@@ -1517,12 +1640,12 @@
                                 "collateralType": "Cash"
                             },
                             "meta": {
-                                "globalKey": "bc31f56d"
+                                "globalKey": "c916a224"
                             }
                         }
                     },
                     "meta": {
-                        "globalKey": "db94e9ed"
+                        "globalKey": "f5ae6d65"
                     }
                 },
                 "tradeLot": [
@@ -1735,19 +1858,19 @@
                         "partyId": [
                             {
                                 "identifier": {
-                                    "value": "CP001LEI111111111111"
+                                    "value": "FUND2"
                                 },
                                 "meta": {
-                                    "globalKey": "12818f8c"
+                                    "globalKey": "4023e0d"
                                 }
                             }
                         ],
                         "name": {
-                            "value": "CP001(Borrower)"
+                            "value": "Fund 2"
                         },
                         "meta": {
-                            "globalKey": "2e189ef",
-                            "externalKey": "Borrower"
+                            "globalKey": "8a826484",
+                            "externalKey": "fund-2"
                         }
                     },
                     {
@@ -1797,15 +1920,15 @@
                     }
                 ],
                 "meta": {
-                    "globalKey": "69b7e53a"
+                    "globalKey": "47bc23f3"
                 }
             },
             "meta": {
-                "globalKey": "69b7e53a"
+                "globalKey": "47bc23f3"
             }
         }
     ],
     "meta": {
-        "globalKey": "a2d62273"
+        "globalKey": "48acf1f8"
     }
 }
