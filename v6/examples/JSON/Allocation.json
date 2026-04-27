@@ -312,6 +312,14 @@
                                                     "deliveryMethod": "DeliveryVersusPayment"
                                                 }
                                             ],
+											"settlementTerms": {
+												"settlementType": "Physical",
+												"settlementDate": {
+													"adjustableOrRelativeDate": {
+														"unadjustedDate": "2025-09-22"
+													}
+												}
+											},			
                                             "underlier": {
                                                 "Instrument": {
                                                     "Security": {
@@ -409,8 +417,8 @@
                                                                         {
                                                                             "InterestRatePayout": {
                                                                                 "payerReceiver": {
-                                                                                    "payer": "Party1",
-                                                                                    "receiver": "Party2"
+                                                                                    "payer": "Party2",
+                                                                                    "receiver": "Party1"
                                                                                 },
                                                                                 "priceQuantity": {
                                                                                     "quantitySchedule": {
@@ -430,7 +438,20 @@
                                                                                     "meta": {
                                                                                         "globalKey": "0"
                                                                                     }
-                                                                                }
+                                                                                },
+																			   "settlementTerms": {
+																					"settlementType": "Cash",
+																					"transferSettlementType": "DeliveryVersusPayment",
+																					"settlementDate": {
+																						"adjustableDates": {
+																							"adjustedDate": [
+																								{
+																									"value": "2025-09-22"
+																								}
+																							]
+																						}
+																					}
+																				}																				
                                                                             },
                                                                             "meta": {
                                                                                 "globalKey": "b141411f"
