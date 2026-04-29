@@ -14,9 +14,17 @@
 								{
 									"AssetPayout": {
 										"payerReceiver": {
-											"payer": "Party2",
-											"receiver": "Party1"
+											"payer": "Party1",
+											"receiver": "Party2"
 										},
+										"settlementTerms": {
+											"settlementType": "Physical",
+											"settlementDate": {
+												"adjustableOrRelativeDate": {
+													"unadjustedDate": "2025-05-16"
+												}          
+											}
+										},										
 										"assetLeg": [
 											{
 												"settlementDate": {
@@ -250,7 +258,7 @@
 							"partyId": [
 								{
 									"identifier": {
-										"value": "CP001LEI111111111111"
+										"value": "FM1LEI11111111111111"
 									}
 								}
 							],
@@ -266,7 +274,7 @@
 							"partyId": [
 								{
 									"identifier": {
-										"value": "FM1LEI11111111111111"
+										"value": "CP001LEI111111111111"
 									}
 								}
 							],
