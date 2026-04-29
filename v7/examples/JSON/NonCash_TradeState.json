@@ -1,6 +1,12 @@
 {
     "trade": {
         "product": {
+            "taxonomy": [
+                {
+                    "source": "ISDA",
+                    "productQualifier": "SecurityLending"
+                }
+            ],
             "economicTerms": {
                 "effectiveDate": {
                     "adjustableDate": {
@@ -17,8 +23,8 @@
                     {
                         "AssetPayout": {
                             "payerReceiver": {
-                                "payer": "Party2",
-                                "receiver": "Party1"
+                                "payer": "Party1",
+                                "receiver": "Party2"
                             },
                             "priceQuantity": {
                                 "quantitySchedule": {
@@ -43,6 +49,20 @@
                                 ],
                                 "meta": {
                                     "globalKey": "0"
+                                }
+                            },
+                            "settlementTerms": {
+                                "settlementType": "Physical",
+                                "settlementDate": {
+                                    "adjustableOrRelativeDate": {
+                                        "unadjustedDate": "2025-05-16"
+                                    },
+                                    "meta": {
+                                        "globalKey": "3f4950"
+                                    }
+                                },
+                                "meta": {
+                                    "globalKey": "1dd3519"
                                 }
                             },
                             "assetLeg": [
@@ -95,7 +115,7 @@
                             }
                         },
                         "meta": {
-                            "globalKey": "c942fe35"
+                            "globalKey": "7e6ac448"
                         }
                     }
                 ],
@@ -133,7 +153,7 @@
                 }
             },
             "meta": {
-                "globalKey": "9e9a5f7f"
+                "globalKey": "de09784c"
             }
         },
         "tradeLot": [
@@ -262,7 +282,7 @@
                             }
                         },
                         "meta": {
-                            "globalKey": "3c35adc3"
+                            "globalKey": "44907233"
                         }
                     }
                 ]
@@ -272,14 +292,14 @@
             {
                 "role": "Party1",
                 "partyReference": {
-                    "globalReference": "46475f52",
+                    "globalReference": "77c2fb0c",
                     "externalReference": "UKLender"
                 }
             },
             {
                 "role": "Party2",
                 "partyReference": {
-                    "globalReference": "676a4509",
+                    "globalReference": "35eea94f",
                     "externalReference": "UKBroker"
                 }
             }
@@ -312,25 +332,6 @@
                 "partyId": [
                     {
                         "identifier": {
-                            "value": "CP001LEI111111111111"
-                        },
-                        "meta": {
-                            "globalKey": "12818f8c"
-                        }
-                    }
-                ],
-                "name": {
-                    "value": "UK Lender"
-                },
-                "meta": {
-                    "globalKey": "46475f52",
-                    "externalKey": "UKLender"
-                }
-            },
-            {
-                "partyId": [
-                    {
-                        "identifier": {
                             "value": "FM1LEI11111111111111"
                         },
                         "meta": {
@@ -339,10 +340,29 @@
                     }
                 ],
                 "name": {
+                    "value": "UK Lender"
+                },
+                "meta": {
+                    "globalKey": "77c2fb0c",
+                    "externalKey": "UKLender"
+                }
+            },
+            {
+                "partyId": [
+                    {
+                        "identifier": {
+                            "value": "CP001LEI111111111111"
+                        },
+                        "meta": {
+                            "globalKey": "12818f8c"
+                        }
+                    }
+                ],
+                "name": {
                     "value": "UK Broker"
                 },
                 "meta": {
-                    "globalKey": "676a4509",
+                    "globalKey": "35eea94f",
                     "externalKey": "UKBroker"
                 }
             }
@@ -350,14 +370,14 @@
         "partyRole": [
             {
                 "partyReference": {
-                    "globalReference": "46475f52",
+                    "globalReference": "77c2fb0c",
                     "externalReference": "UKLender"
                 },
                 "role": "Lender"
             },
             {
                 "partyReference": {
-                    "globalReference": "676a4509",
+                    "globalReference": "35eea94f",
                     "externalReference": "UKBroker"
                 },
                 "role": "Borrower"
@@ -370,13 +390,13 @@
             }
         },
         "meta": {
-            "globalKey": "a67ee18a"
+            "globalKey": "6e2879a3"
         }
     },
     "state": {
         "positionState": "Executed"
     },
     "meta": {
-        "globalKey": "aab88e99"
+        "globalKey": "2e5c8472"
     }
 }
