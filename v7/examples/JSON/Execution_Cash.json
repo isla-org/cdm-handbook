@@ -12,69 +12,61 @@
                             },
                             "payout": [
                                 {
-                                    "AssetPayout": {
-                                        "payerReceiver": {
-                                            "payer": "Party1",
-                                            "receiver": "Party2"
+                                    "@type": "cdm.product.template.AssetPayout",
+                                    "payerReceiver": {
+                                        "payer": "Party1",
+                                        "receiver": "Party2"
+                                    },
+                                    "priceQuantity": {
+                                        "quantitySchedule": {
+                                            "@ref:scoped": "AssetQuantity-1"
                                         },
-                                        "settlementTerms": {
-                                            "settlementType": "Physical",
-                                            "settlementDate": {
-                                                "adjustableOrRelativeDate": {
-                                                    "unadjustedDate": "2026-01-27"
-                                                }
+                                        "priceSchedule": [
+                                            {
+                                                "@ref:scoped": "AssetPrice-1"
+                                            }
+                                        ]
+                                    },
+                                    "settlementTerms": {
+                                        "settlementType": "Physical",
+                                        "settlementDate": {
+                                            "adjustableOrRelativeDate": {
+                                                "unadjustedDate": "2026-01-27"
                                             }
                                         },
-                                        "assetLeg": [
-                                            {
-                                                "settlementDate": {
-                                                    "adjustableDate": {
-                                                        "adjustedDate": {
-                                                            "value": "2026-01-27"
-                                                        }
+										"cashSettlementCentre": "CashSettlementCentre",
+										"securitySettlementCentre": "SecuritySettlementCentre"
+                                    },
+                                    "assetLeg": [
+                                        {
+                                            "settlementDate": {
+                                                "adjustableDate": {
+                                                    "adjustedDate": {
+                                                        "@data": "2026-01-27"
                                                     }
+                                                }
+                                            },
+                                            "deliveryMethod": "DeliveryVersusPayment"
+                                        }
+                                    ],
+                                    "underlier": {
+                                        "@type": "cdm.base.staticdata.asset.common.Security",
+                                        "identifier": [
+                                            {
+                                                "identifier": {
+                                                    "@data": "GB00BDR05C01"
                                                 },
-                                                "deliveryMethod": "DeliveryVersusPayment"
+                                                "identifierType": "ISIN"
                                             }
                                         ],
-                                        "underlier": {
-                                            "Instrument": {
-                                                "Security": {
-                                                    "assetType": "Security",
-                                                    "securityType": "Equity",
-                                                    "identifier": [
-                                                        {
-                                                            "identifier": {
-                                                                "value": "GB00BDR05C01"
-                                                            },
-                                                            "identifierType": "ISIN"
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        },
-                                        "minimumFee": {
-                                            "value": 50,
-                                            "unit": {
-                                                "currency": {
-                                                    "value": "USD"
-                                                }
-                                            }
-                                        },
-                                        "priceQuantity": {
-                                            "priceSchedule": [
-                                                {
-                                                    "address": {
-                                                        "scope": "DOCUMENT",
-                                                        "value": "AssetPrice-1"
-                                                    }
-                                                }
-                                            ],
-                                            "quantitySchedule": {
-                                                "address": {
-                                                    "scope": "DOCUMENT",
-                                                    "value": "AssetQuantity-1"
-                                                }
+                                        "assetType": "Security",
+                                        "securityType": "Equity"
+                                    },
+                                    "minimumFee": {
+                                        "value": 50,
+                                        "unit": {
+                                            "currency": {
+                                                "@data": "USD"
                                             }
                                         }
                                     }
@@ -83,102 +75,94 @@
                             "collateral": {
                                 "collateralPortfolio": [
                                     {
-                                        "value": {
-                                            "collateralPosition": [
-                                                {
-                                                    "priceQuantity": [
-                                                        {
-                                                            "price": [
-                                                                {
-                                                                    "value": {
-                                                                        "value": 0.00555,
-                                                                        "unit": {
-                                                                            "currency": {
-                                                                                "value": "GBP"
-                                                                            }
-                                                                        },
-                                                                        "perUnitOf": {
-                                                                            "currency": {
-                                                                                "value": "GBP"
-                                                                            }
-                                                                        },
-                                                                        "priceType": "InterestRate"
+                                        "collateralPosition": [
+                                            {
+                                                "priceQuantity": [
+                                                    {
+                                                        "price": [
+                                                            {
+                                                                "value": 0.00555,
+                                                                "unit": {
+                                                                    "currency": {
+                                                                        "@data": "GBP"
                                                                     }
+                                                                },
+                                                                "perUnitOf": {
+                                                                    "currency": {
+                                                                        "@data": "GBP"
+                                                                    }
+                                                                },
+                                                                "priceType": "InterestRate"
+                                                            }
+                                                        ],
+                                                        "quantity": {
+                                                            "value": 10200000,
+                                                            "unit": {
+                                                                "currency": {
+                                                                    "@data": "GBP"
                                                                 }
-                                                            ],
-                                                            "quantity": [
-                                                                {
-                                                                    "value": {
-                                                                        "value": 10200000,
-                                                                        "unit": {
-                                                                            "currency": {
-                                                                                "value": "GBP"
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            ]
-                                                        }
-                                                    ],
-                                                    "product": {
-                                                        "TransferableProduct": {
-                                                            "Cash": {
-                                                                "assetType": "Cash",
-                                                                "identifier": [
-                                                                    {
-                                                                        "identifier": {
-                                                                            "value": "GBP"
-                                                                        },
-                                                                        "identifierType": "CurrencyCode"
-                                                                    }
-                                                                ]
-                                                            },
-                                                            "economicTerms": {
-                                                                "payout": [
-                                                                    {
-                                                                        "InterestRatePayout": {
-                                                                            "payerReceiver": {
-                                                                                "payer": "Party2",
-                                                                                "receiver": "Party1"
-                                                                            },
-                                                                            "priceQuantity": {
-                                                                                "priceSchedule": [
-                                                                                    {
-                                                                                        "address": {
-                                                                                            "scope": "DOCUMENT",
-                                                                                            "value": "InterestRate-1"
-                                                                                        }
-                                                                                    }
-                                                                                ],
-                                                                                "quantitySchedule": {
-                                                                                    "address": {
-                                                                                        "scope": "DOCUMENT",
-                                                                                        "value": "CollateralValue-1"
-                                                                                    }
-                                                                                }
-                                                                            },
-                                                                            "settlementTerms": {
-                                                                                "settlementType": "Cash",
-                                                                                "transferSettlementType": "DeliveryVersusPayment",
-                                                                                "settlementDate": {
-                                                                                    "adjustableDates": {
-                                                                                        "adjustedDate": [
-                                                                                            {
-                                                                                                "value": "2026-01-27"
-                                                                                            }
-                                                                                        ]
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                ]
                                                             }
                                                         }
                                                     }
+                                                ],
+                                                "product": {
+                                                    "@type": "cdm.product.template.TransferableProduct",
+													"asset": {
+														"@type": "cdm.base.staticdata.asset.common.Cash",
+														"identifier": [
+															{
+																"identifier": {
+																	"@data": "GBP"
+																},
+																"identifierType": "CurrencyCode"
+															}
+														],
+														"partyRole": {
+															"partyReference": {
+																"@ref:external": "UKBroker"
+															},
+															"role": "Borrower"
+														},
+														"assetType": "Cash"
+													},
+                                                    "economicTerms": {
+                                                        "payout": [
+                                                            {
+                                                                "@type": "cdm.product.asset.InterestRatePayout",
+                                                                "payerReceiver": {
+                                                                    "payer": "Party2",
+                                                                    "receiver": "Party1"
+                                                                },
+                                                                "priceQuantity": {
+                                                                    "quantitySchedule": {
+                                                                        "@ref:scoped": "CollateralValue-1"
+                                                                    },
+                                                                    "priceSchedule": [
+                                                                        {
+                                                                            "@ref:scoped": "InterestRate-1"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "settlementTerms": {
+                                                                    "settlementType": "Cash",
+                                                                    "transferSettlementType": "DeliveryVersusPayment",
+                                                                    "settlementDate": {
+                                                                        "adjustableDates": {
+                                                                            "adjustedDate": [
+                                                                                {
+                                                                                    "@data": "2026-01-27"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+													"productPartyRole": "Party2"
                                                 }
-                                            ]
-                                        }
+                                            }
+                                        ]
                                     }
                                 ],
                                 "collateralProvisions": {
@@ -186,9 +170,8 @@
                                     "eligibleCollateral": [
                                         {
                                             "collateralCriteria": {
-                                                "AssetType": {
-                                                    "assetType": "Cash"
-                                                }
+                                                "@type": "cdm.base.staticdata.asset.common.AssetType",
+                                                "assetType": "Cash"
                                             },
                                             "treatment": {
                                                 "valuationTreatment": {
@@ -206,127 +189,69 @@
                         {
                             "price": [
                                 {
-                                    "value": {
-                                        "value": 0.00555,
-                                        "unit": {
-                                            "currency": {
-                                                "value": "GBP"
-                                            }
-                                        },
-                                        "perUnitOf": {
-                                            "currency": {
-                                                "value": "GBP"
-                                            }
-                                        },
-                                        "priceType": "InterestRate"
-                                    },
-                                    "meta": {
-                                        "location": [
-                                            {
-                                                "scope": "DOCUMENT",
-                                                "value": "InterestRate-1"
-                                            }
-                                        ]
-                                    }
-                                }
-                            ],
-                            "quantity": [
-                                {
-                                    "value": {
-                                        "value": 10200000,
-                                        "unit": {
-                                            "currency": {
-                                                "value": "GBP"
-                                            }
+                                    "@key:scoped": "InterestRate-1",
+                                    "value": 0.00555,
+                                    "unit": {
+                                        "currency": {
+                                            "@data": "GBP"
                                         }
                                     },
-                                    "meta": {
-                                        "location": [
-                                            {
-                                                "scope": "DOCUMENT",
-                                                "value": "CollateralValue-1"
-                                            }
-                                        ]
-                                    }
+                                    "perUnitOf": {
+                                        "currency": {
+                                            "@data": "GBP"
+                                        }
+                                    },
+                                    "priceType": "InterestRate"
                                 }
                             ],
-                            "meta": {
-                                "globalKey": "PriceQuantity-1"
+                            "quantity": {
+                                "@key:scoped": "CollateralValue-1",
+                                "value": 10200000,
+                                "unit": {
+                                    "currency": {
+                                        "@data": "GBP"
+                                    }
+                                }
                             }
                         },
                         {
                             "price": [
                                 {
-                                    "value": {
-                                        "value": 10,
-                                        "unit": {
-                                            "currency": {
-                                                "value": "GBP"
-                                            }
-                                        },
-                                        "perUnitOf": {
-                                            "financialUnit": "Share"
-                                        },
-                                        "priceType": "AssetPrice"
-                                    },
-                                    "meta": {
-                                        "location": [
-                                            {
-                                                "scope": "DOCUMENT",
-                                                "value": "AssetPrice-1"
-                                            }
-                                        ]
-                                    }
-                                }
-                            ],
-                            "quantity": [
-                                {
-                                    "value": {
-                                        "value": 1000000,
-                                        "unit": {
-                                            "financialUnit": "Share"
+                                    "@key:scoped": "AssetPrice-1",
+                                    "value": 10,
+                                    "unit": {
+                                        "currency": {
+                                            "@data": "GBP"
                                         }
                                     },
-                                    "meta": {
-                                        "location": [
-                                            {
-                                                "scope": "DOCUMENT",
-                                                "value": "AssetQuantity-1"
-                                            }
-                                        ]
-                                    }
+                                    "perUnitOf": {
+                                        "financialUnit": "Share"
+                                    },
+                                    "priceType": "AssetPrice"
                                 }
                             ],
-                            "observable": {
-                                "value": {
-                                    "Asset": {
-                                        "Instrument": {
-                                            "Security": {
-                                                "assetType": "Security",
-                                                "securityType": "Equity",
-                                                "identifier": [
-                                                    {
-                                                        "identifier": {
-                                                            "value": "GB00BDR05C01"
-                                                        },
-                                                        "identifierType": "ISIN"
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    }
-                                },
-                                "meta": {
-                                    "location": [
-                                        {
-                                            "scope": "DOCUMENT",
-                                            "value": "Observable-1"
-                                        }
-                                    ]
+                            "quantity": {
+                                "@key:scoped": "AssetQuantity-1",
+                                "value": 1000000,
+                                "unit": {
+                                    "financialUnit": "Share"
                                 }
                             },
-                            "meta": {
-                                "globalKey": "PriceQuantity-2"
+                            "observable": {
+                                "@key:scoped": "Observable-1",
+                                "@data": {
+                                    "@type": "cdm.base.staticdata.asset.common.Security",
+                                    "identifier": [
+                                        {
+                                            "identifier": {
+                                                "@data": "GB00BDR05C01"
+                                            },
+                                            "identifierType": "ISIN"
+                                        }
+                                    ],
+                                    "assetType": "Security",
+                                    "securityType": "Equity"
+                                }
                             }
                         }
                     ],
@@ -334,66 +259,54 @@
                         {
                             "role": "Party1",
                             "partyReference": {
-                                "externalReference": "UKLender"
+                                "@ref:external": "UKLender"
                             }
                         },
                         {
                             "role": "Party2",
                             "partyReference": {
-                                "externalReference": "UKBroker"
+                                "@ref:external": "UKBroker"
                             }
                         }
                     ],
                     "parties": [
                         {
+                            "@key:external": "UKLender",
                             "partyId": [
                                 {
                                     "identifier": {
-                                        "value": "FM1LEI11111111111111"
-                                    },
-                                    "meta": {
-                                        "globalKey": "12818f8c"
+                                        "@data": "FM1LEI11111111111111"
                                     }
                                 }
                             ],
                             "name": {
-                                "value": "UK Lender"
-                            },
-                            "meta": {
-                                "globalKey": "1ef4886d",
-                                "externalKey": "UKLender"
+                                "@data": "UK Lender"
                             }
                         },
                         {
+                            "@key:external": "UKBroker",
                             "partyId": [
                                 {
                                     "identifier": {
-                                        "value": "CP001LEI111111111111"
-                                    },
-                                    "meta": {
-                                        "globalKey": "87c4d1c6"
+                                        "@data": "CP001LEI111111111111"
                                     }
                                 }
                             ],
                             "name": {
-                                "value": "UK Broker"
-                            },
-                            "meta": {
-                                "globalKey": "296093b7",
-                                "externalKey": "UKBroker"
+                                "@data": "UK Broker"
                             }
                         }
                     ],
                     "partyRoles": [
                         {
                             "partyReference": {
-                                "externalReference": "UKLender"
+                                "@ref:external": "UKLender"
                             },
                             "role": "Lender"
                         },
                         {
                             "partyReference": {
-                                "externalReference": "UKBroker"
+                                "@ref:external": "UKBroker"
                             },
                             "role": "Borrower"
                         }
@@ -402,17 +315,17 @@
                         "executionType": "OnVenue"
                     },
                     "tradeDate": {
-                        "value": "2026-01-26"
+                        "@data": "2026-01-26"
                     },
                     "tradeIdentifier": [
                         {
                             "issuer": {
-                                "value": "UK Broker"
+                                "@data": "UK Broker"
                             },
                             "assignedIdentifier": [
                                 {
                                     "identifier": {
-                                        "value": "20445678222"
+                                        "@data": "20445678222"
                                     }
                                 }
                             ]
