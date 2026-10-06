@@ -1,10 +1,10 @@
 {
     "@model": "cdm",
     "@type": "cdm.event.common.BusinessEvent",
-    "@version": "7.4.0",
-    "@key": "b397d64d",
-    "eventDate": "2026-01-26",
-    "effectiveDate": "2026-01-26",
+    "@version": "7.5.0",
+    "@key": "a5208adf",
+    "eventDate": "2025-05-15",
+    "effectiveDate": "2025-05-15",
     "instruction": [
         {
             "primitiveInstruction": {
@@ -106,11 +106,59 @@
                                                     }
                                                 }
                                             ]
-                                        }
+                                        },
+                                        "collateralBalance": [
+                                            {
+                                                "amountBaseCurrency": {
+                                                    "value": 11107913.33,
+                                                    "unit": {
+                                                        "currency": {
+                                                            "@data": "GBP"
+                                                        }
+                                                    }
+                                                },
+                                                "payerReceiver": {
+                                                    "payerPartyReference": {
+                                                        "@ref:external": "UKBroker"
+                                                    },
+                                                    "receiverPartyReference": {
+                                                        "@ref:external": "UKLender"
+                                                    }
+                                                }
+                                            }
+                                        ]
                                     }
                                 ],
                                 "collateralProvisions": {
-                                    "collateralType": "NonCash"
+                                    "collateralType": "NonCash",
+                                    "eligibleCollateral": [
+                                        {
+                                            "collateralCriteria": {
+                                                "@type": "cdm.base.staticdata.asset.common.AssetType",
+                                                "assetType": "Security",
+                                                "securityType": "Equity"
+                                            },
+                                            "treatment": {
+                                                "valuationTreatment": {
+                                                    "marginPercentage": 1.02
+                                                },
+                                                "isIncluded": true
+                                            }
+                                        },
+                                        {
+                                            "collateralCriteria": {
+                                                "@type": "cdm.base.staticdata.asset.common.AssetType",
+                                                "assetType": "Security",
+                                                "securityType": "Equity"
+                                            },
+                                            "treatment": {
+                                                "valuationTreatment": {
+                                                    "haircutPercentage": 0.9
+                                                },
+                                                "isIncluded": true
+                                            }
+                                        }
+                                    ]
                                 }
                             }
                         }
@@ -120,7 +168,12 @@
                             "price": [
                                 {
                                     "@key:scoped": "LendingFee-1",
-                                    "value": 0.01,
+                                    "datedValue": [
+                                        {
+                                            "date": "2025-05-15",
+                                            "value": 0.01
+                                        }
+                                    ],
                                     "unit": {
                                         "currency": {
                                             "@data": "GBP"
@@ -131,12 +184,13 @@
                                             "@data": "GBP"
                                         }
                                     },
-                                    "priceType": "InterestRate"
+                                    "priceType": "InterestRate",
+                                    "priceSubType": "Fee"
                                 }
                             ],
                             "quantity": {
                                 "@key:scoped": "LoanValue-1",
-                                "value": 9997122,
+                                "value": 9801100,
                                 "unit": {
                                     "currency": {
                                         "@data": "GBP"
@@ -366,11 +420,59 @@
                                                 }
                                             }
                                         ]
-                                    }
+                                    },
+                                    "collateralBalance": [
+                                        {
+                                            "amountBaseCurrency": {
+                                                "value": 11107913.33,
+                                                "unit": {
+                                                    "currency": {
+                                                        "@data": "GBP"
+                                                    }
+                                                }
+                                            },
+                                            "payerReceiver": {
+                                                "payerPartyReference": {
+                                                    "@ref:external": "UKBroker"
+                                                },
+                                                "receiverPartyReference": {
+                                                    "@ref:external": "UKLender"
+                                                }
+                                            }
+                                        }
+                                    ]
                                 }
                             ],
                             "collateralProvisions": {
-                                "collateralType": "NonCash"
+                                "collateralType": "NonCash",
+                                "eligibleCollateral": [
+                                    {
+                                        "collateralCriteria": {
+                                            "@type": "cdm.base.staticdata.asset.common.AssetType",
+                                            "assetType": "Security",
+                                            "securityType": "Equity"
+                                        },
+                                        "treatment": {
+                                            "valuationTreatment": {
+                                                "marginPercentage": 1.02
+                                            },
+                                            "isIncluded": true
+                                        }
+                                    },
+                                    {
+                                        "collateralCriteria": {
+                                            "@type": "cdm.base.staticdata.asset.common.AssetType",
+                                            "assetType": "Security",
+                                            "securityType": "Equity"
+                                        },
+                                        "treatment": {
+                                            "valuationTreatment": {
+                                                "haircutPercentage": 0.9
+                                            },
+                                            "isIncluded": true
+                                        }
+                                    }
+                                ]
                             }
                         }
                     }
@@ -382,7 +484,12 @@
                                 "price": [
                                     {
                                         "@key:scoped": "LendingFee-1",
-                                        "value": 0.01,
+                                        "datedValue": [
+                                            {
+                                                "date": "2025-05-15",
+                                                "value": 0.01
+                                            }
+                                        ],
                                         "unit": {
                                             "currency": {
                                                 "@data": "GBP"
@@ -393,12 +500,13 @@
                                                 "@data": "GBP"
                                             }
                                         },
-                                        "priceType": "InterestRate"
+                                        "priceType": "InterestRate",
+                                        "priceSubType": "Fee"
                                     }
                                 ],
                                 "quantity": {
                                     "@key:scoped": "LoanValue-1",
-                                    "value": 9997122,
+                                    "value": 9801100,
                                     "unit": {
                                         "currency": {
                                             "@data": "GBP"
