@@ -1,159 +1,160 @@
 {
+    "@model": "cdm",
+    "@type": "cdm.event.common.TradeState",
+    "@version": "7.5.0",
     "trade": {
         "product": {
             "taxonomy": [
                 {
                     "source": "ISDA",
-                    "productQualifier": "SecurityLending"
+                    "value": {
+                        "name": {
+                            "@data": "SecurityLending"
+                        }
+                    },
+                    "calculated": true
                 }
             ],
             "economicTerms": {
                 "effectiveDate": {
                     "adjustableDate": {
-                        "unadjustedDate": "2025-05-15",
-                        "meta": {
-                            "globalKey": "3f494f"
-                        }
-                    },
-                    "meta": {
-                        "globalKey": "3f494f"
+                        "unadjustedDate": "2025-05-15"
                     }
                 },
                 "payout": [
                     {
-                        "AssetPayout": {
-                            "payerReceiver": {
-                                "payer": "Party1",
-                                "receiver": "Party2"
+                        "@type": "cdm.product.template.AssetPayout",
+                        "payerReceiver": {
+                            "payer": "Party1",
+                            "receiver": "Party2"
+                        },
+                        "priceQuantity": {
+                            "quantitySchedule": {
+                                "@ref:scoped": "AssetQuantity-1"
                             },
-                            "priceQuantity": {
-                                "quantitySchedule": {
-                                    "address": {
-                                        "scope": "DOCUMENT",
-                                        "value": "AssetQuantity-1"
-                                    }
-                                },
-                                "priceSchedule": [
-                                    {
-                                        "address": {
-                                            "scope": "DOCUMENT",
-                                            "value": "LendingFee-1"
-                                        }
-                                    },
-                                    {
-                                        "address": {
-                                            "scope": "DOCUMENT",
-                                            "value": "AssetPrice-1"
-                                        }
-                                    }
-                                ],
-                                "meta": {
-                                    "globalKey": "0"
-                                }
-                            },
-                            "settlementTerms": {
-                                "settlementType": "Physical",
-                                "settlementDate": {
-                                    "adjustableOrRelativeDate": {
-                                        "unadjustedDate": "2025-05-16"
-                                    },
-                                    "meta": {
-                                        "globalKey": "3f4950"
-                                    }
-                                },
-                                "meta": {
-                                    "globalKey": "1dd3519"
-                                }
-                            },
-                            "assetLeg": [
+                            "priceSchedule": [
                                 {
-                                    "settlementDate": {
-                                        "adjustableDate": {
-                                            "adjustedDate": {
-                                                "value": "2025-05-16",
-                                                "meta": {
-                                                    "globalKey": "3f4950"
-                                                }
-                                            },
-                                            "meta": {
-                                                "globalKey": "0"
-                                            }
-                                        },
-                                        "meta": {
-                                            "globalKey": "0"
+                                    "@ref:scoped": "LendingFee-1"
+                                },
+                                {
+                                    "@ref:scoped": "AssetPrice-1"
+                                }
+                            ]
+                        },
+                        "settlementTerms": {
+                            "settlementType": "Physical",
+                            "settlementDate": {
+                                "adjustableOrRelativeDate": {
+                                    "unadjustedDate": "2025-05-16"
+                                }
+                            },
+                            "securitySettlementCentre": "SecuritySettlementCentre",
+                            "cashSettlementCentre": "CashSettlementCentre"
+                        },
+                        "assetLeg": [
+                            {
+                                "settlementDate": {
+                                    "adjustableDate": {
+                                        "adjustedDate": {
+                                            "@data": "2025-05-16"
                                         }
+                                    }
+                                },
+                                "deliveryMethod": "FreeOfPayment"
+                            }
+                        ],
+                        "underlier": {
+                            "@type": "cdm.base.staticdata.asset.common.Security",
+                            "identifier": [
+                                {
+                                    "identifier": {
+                                        "@data": "GB00BDR05C01"
                                     },
-                                    "deliveryMethod": "FreeOfPayment"
+                                    "identifierType": "ISIN"
                                 }
                             ],
-                            "underlier": {
-                                "Instrument": {
-                                    "Security": {
-                                        "identifier": [
-                                            {
-                                                "identifier": {
-                                                    "value": "GB00BDR05C01"
-                                                },
-                                                "identifierType": "ISIN"
-                                            }
-                                        ],
-                                        "assetType": "Security",
-                                        "securityType": "Equity"
-                                    }
-                                }
-                            },
-                            "minimumFee": {
-                                "value": 10,
-                                "unit": {
-                                    "currency": {
-                                        "value": "USD"
-                                    }
-                                },
-                                "meta": {
-                                    "globalKey": "2c99ae7"
+                            "assetType": "Security",
+                            "securityType": "Equity"
+                        },
+                        "minimumFee": {
+                            "value": 10,
+                            "unit": {
+                                "currency": {
+                                    "@data": "USD"
                                 }
                             }
-                        },
-                        "meta": {
-                            "globalKey": "7e6ac448"
                         }
                     }
                 ],
                 "collateral": {
                     "collateralPortfolio": [
                         {
-                            "value": {
-                                "portfolioIdentifier": {
-                                    "issuer": {
-                                        "value": "UK Broker"
-                                    },
-                                    "assignedIdentifier": [
-                                        {
-                                            "identifier": {
-                                                "value": "CollateralSchedule001"
+                            "portfolioIdentifier": {
+                                "issuer": {
+                                    "@data": "UK Broker"
+                                },
+                                "assignedIdentifier": [
+                                    {
+                                        "identifier": {
+                                            "@data": "CollateralSchedule001"
+                                        }
+                                    }
+                                ]
+                            },
+                            "collateralBalance": [
+                                {
+                                    "amountBaseCurrency": {
+                                        "value": 11107913.33,
+                                        "unit": {
+                                            "currency": {
+                                                "@data": "GBP"
                                             }
                                         }
-                                    ],
-                                    "meta": {
-                                        "globalKey": "262bf9c0"
+                                    },
+                                    "payerReceiver": {
+                                        "payerPartyReference": {
+                                            "@ref:external": "UKBroker"
+                                        },
+                                        "receiverPartyReference": {
+                                            "@ref:external": "UKLender"
+                                        }
                                     }
-                                },
-                                "meta": {
-                                    "globalKey": "262bf9c0"
                                 }
-                            }
+                            ]
                         }
                     ],
                     "collateralProvisions": {
-                        "collateralType": "NonCash"
-                    },
-                    "meta": {
-                        "globalKey": "cf30ab45"
+                        "collateralType": "NonCash",
+                        "eligibleCollateral": [
+                            {
+                                "collateralCriteria": {
+                                    "@type": "cdm.base.staticdata.asset.common.AssetType",
+                                    "assetType": "Security",
+                                    "securityType": "Equity"
+                                },
+                                "treatment": {
+                                    "valuationTreatment": {
+                                        "marginPercentage": 1.02
+                                    },
+                                    "isIncluded": true
+                                }
+                            },
+                            {
+                                "collateralCriteria": {
+                                    "@type": "cdm.base.staticdata.asset.common.AssetType",
+                                    "assetType": "Security",
+                                    "securityType": "Equity"
+                                },
+                                "treatment": {
+                                    "valuationTreatment": {
+                                        "haircutPercentage": 0.9
+                                    },
+                                    "isIncluded": true
+                                }
+                            }
+                        ]
                     }
                 }
-            },
-            "meta": {
-                "globalKey": "de09784c"
             }
         },
         "tradeLot": [
@@ -162,127 +163,75 @@
                     {
                         "price": [
                             {
-                                "value": {
-                                    "value": 0.01,
-                                    "unit": {
-                                        "currency": {
-                                            "value": "GBP"
-                                        }
-                                    },
-                                    "perUnitOf": {
-                                        "currency": {
-                                            "value": "GBP"
-                                        }
-                                    },
-                                    "priceType": "InterestRate"
-                                },
-                                "meta": {
-                                    "location": [
-                                        {
-                                            "scope": "DOCUMENT",
-                                            "value": "LendingFee-1"
-                                        }
-                                    ]
-                                }
-                            }
-                        ],
-                        "quantity": [
-                            {
-                                "value": {
-                                    "value": 9997122,
-                                    "unit": {
-                                        "currency": {
-                                            "value": "GBP"
-                                        }
+                                "@key:scoped": "LendingFee-1",
+                                "datedValue": [
+                                    {
+                                        "date": "2025-05-15",
+                                        "value": 0.01
+                                    }
+                                ],
+                                "unit": {
+                                    "currency": {
+                                        "@data": "GBP"
                                     }
                                 },
-                                "meta": {
-                                    "location": [
-                                        {
-                                            "scope": "DOCUMENT",
-                                            "value": "LoanValue-1"
-                                        }
-                                    ]
-                                }
+                                "perUnitOf": {
+                                    "currency": {
+                                        "@data": "GBP"
+                                    }
+                                },
+                                "priceType": "InterestRate",
+                                "priceSubType": "Fee"
                             }
                         ],
-                        "meta": {
-                            "globalKey": "7d2d5f14"
+                        "quantity": {
+                            "@key:scoped": "LoanValue-1",
+                            "value": 9801100,
+                            "unit": {
+                                "currency": {
+                                    "@data": "GBP"
+                                }
+                            }
                         }
                     },
                     {
                         "price": [
                             {
-                                "value": {
-                                    "value": 9.8011,
-                                    "unit": {
-                                        "currency": {
-                                            "value": "GBP"
-                                        }
-                                    },
-                                    "perUnitOf": {
-                                        "financialUnit": "Share"
-                                    },
-                                    "priceType": "AssetPrice"
-                                },
-                                "meta": {
-                                    "location": [
-                                        {
-                                            "scope": "DOCUMENT",
-                                            "value": "AssetPrice-1"
-                                        }
-                                    ]
-                                }
-                            }
-                        ],
-                        "quantity": [
-                            {
-                                "value": {
-                                    "value": 1000000,
-                                    "unit": {
-                                        "financialUnit": "Share"
+                                "@key:scoped": "AssetPrice-1",
+                                "value": 9.8011,
+                                "unit": {
+                                    "currency": {
+                                        "@data": "GBP"
                                     }
                                 },
-                                "meta": {
-                                    "location": [
-                                        {
-                                            "scope": "DOCUMENT",
-                                            "value": "AssetQuantity-1"
-                                        }
-                                    ]
-                                }
+                                "perUnitOf": {
+                                    "financialUnit": "Share"
+                                },
+                                "priceType": "AssetPrice"
                             }
                         ],
-                        "observable": {
-                            "value": {
-                                "Asset": {
-                                    "Instrument": {
-                                        "Security": {
-                                            "identifier": [
-                                                {
-                                                    "identifier": {
-                                                        "value": "GB00BDR05C01"
-                                                    },
-                                                    "identifierType": "ISIN"
-                                                }
-                                            ],
-                                            "assetType": "Security",
-                                            "securityType": "Equity"
-                                        }
-                                    }
-                                }
-                            },
-                            "meta": {
-                                "location": [
-                                    {
-                                        "scope": "DOCUMENT",
-                                        "value": "Observable-1"
-                                    }
-                                ]
+                        "quantity": {
+                            "@key:scoped": "AssetQuantity-1",
+                            "value": 1000000,
+                            "unit": {
+                                "financialUnit": "Share"
                             }
                         },
-                        "meta": {
-                            "globalKey": "44907233"
+                        "observable": {
+                            "@key:scoped": "Observable-1",
+                            "@data": {
+                                "@type": "cdm.base.staticdata.asset.common.Security",
+                                "identifier": [
+                                    {
+                                        "identifier": {
+                                            "@data": "GB00BDR05C01"
+                                        },
+                                        "identifierType": "ISIN"
+                                    }
+                                ],
+                                "assetType": "Security",
+                                "securityType": "Equity"
+                            }
                         }
                     }
                 ]
@@ -292,111 +241,105 @@
             {
                 "role": "Party1",
                 "partyReference": {
-                    "globalReference": "77c2fb0c",
-                    "externalReference": "UKLender"
+                    "@ref:external": "UKLender"
                 }
             },
             {
                 "role": "Party2",
                 "partyReference": {
-                    "globalReference": "35eea94f",
-                    "externalReference": "UKBroker"
+                    "@ref:external": "UKBroker"
                 }
             }
         ],
         "tradeIdentifier": [
             {
                 "issuer": {
-                    "value": "UK Broker"
+                    "@data": "UK Broker"
                 },
                 "assignedIdentifier": [
                     {
                         "identifier": {
-                            "value": "20445678222"
+                            "@data": "20445678222"
                         }
                     }
-                ],
-                "meta": {
-                    "globalKey": "4b475acf"
-                }
+                ]
             }
         ],
         "tradeDate": {
-            "value": "2025-05-15",
-            "meta": {
-                "globalKey": "3f494f"
-            }
+            "@data": "2025-05-15"
         },
         "party": [
             {
+                "@key:external": "UKLender",
                 "partyId": [
                     {
                         "identifier": {
-                            "value": "FM1LEI11111111111111"
-                        },
-                        "meta": {
-                            "globalKey": "87c4d1c6"
+                            "@data": "FM1LEI11111111111111"
                         }
                     }
                 ],
                 "name": {
-                    "value": "UK Lender"
-                },
-                "meta": {
-                    "globalKey": "77c2fb0c",
-                    "externalKey": "UKLender"
+                    "@data": "UK Lender"
                 }
             },
             {
+                "@key:external": "UKBroker",
                 "partyId": [
                     {
                         "identifier": {
-                            "value": "CP001LEI111111111111"
-                        },
-                        "meta": {
-                            "globalKey": "12818f8c"
+                            "@data": "CP001LEI111111111111"
                         }
                     }
                 ],
                 "name": {
-                    "value": "UK Broker"
-                },
-                "meta": {
-                    "globalKey": "35eea94f",
-                    "externalKey": "UKBroker"
+                    "@data": "UK Broker"
                 }
             }
         ],
         "partyRole": [
             {
                 "partyReference": {
-                    "globalReference": "77c2fb0c",
-                    "externalReference": "UKLender"
+                    "@ref:external": "UKLender"
                 },
                 "role": "Lender"
             },
             {
                 "partyReference": {
-                    "globalReference": "35eea94f",
-                    "externalReference": "UKBroker"
+                    "@ref:external": "UKBroker"
                 },
                 "role": "Borrower"
             }
         ],
         "executionDetails": {
-            "executionType": "OnVenue",
-            "meta": {
-                "globalKey": "d39bbbef"
-            }
+            "executionType": "OnVenue"
         },
-        "meta": {
-            "globalKey": "6e2879a3"
+        "contractDetails": {
+            "documentation": [
+                {
+                    "agreementDate": "2020-01-01",
+                    "legalAgreementIdentification": {
+                        "agreementName": {
+                            "agreementType": "MasterAgreement",
+                            "masterAgreementType": {
+                                "@data": "GMSLA"
+                            }
+                        },
+                        "publisher": "ISLA",
+                        "vintage": 2018
+                    },
+                    "contractualParty": [
+                        {
+                            "@ref:external": "UKBroker"
+                        },
+                        {
+                            "@ref:external": "UKLender"
+                        }
+                    ]
+                }
+            ]
         }
     },
     "state": {
         "positionState": "Executed"
-    },
-    "meta": {
-        "globalKey": "2e5c8472"
     }
 }
