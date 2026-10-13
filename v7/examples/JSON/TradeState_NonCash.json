@@ -30,14 +30,11 @@
                         },
                         "priceQuantity": {
                             "quantitySchedule": {
-                                "@ref:scoped": "AssetQuantity-1"
+                                "@ref:scoped": "MarketValue-1"
                             },
                             "priceSchedule": [
                                 {
                                     "@ref:scoped": "LendingFee-1"
-                                },
-                                {
-                                    "@ref:scoped": "AssetPrice-1"
                                 }
                             ]
                         },
@@ -185,7 +182,7 @@
                             }
                         ],
                         "quantity": {
-                            "@key:scoped": "LoanValue-1",
+                            "@key:scoped": "MarketValue-1",
                             "value": 9801100,
                             "unit": {
                                 "currency": {
