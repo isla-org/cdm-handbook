@@ -34,8 +34,8 @@
                                                 "unadjustedDate": "2026-01-27"
                                             }
                                         },
-										"cashSettlementCentre": "CashSettlementCentre",
-										"securitySettlementCentre": "SecuritySettlementCentre"
+                                        "cashSettlementCentre": "CashSettlementCentre",
+                                        "securitySettlementCentre": "SecuritySettlementCentre"
                                     },
                                     "assetLeg": [
                                         {
@@ -81,7 +81,12 @@
                                                     {
                                                         "price": [
                                                             {
-                                                                "value": 0.00555,
+                                                                "datedValue": [
+																	{
+																		"date": "2026-01-26",
+																		"value": 0.00555
+																	}
+																],
                                                                 "unit": {
                                                                     "currency": {
                                                                         "@data": "GBP"
@@ -92,7 +97,8 @@
                                                                         "@data": "GBP"
                                                                     }
                                                                 },
-                                                                "priceType": "InterestRate"
+                                                                "priceType": "InterestRate",
+                                                                "priceSubType": "Rebate"
                                                             }
                                                         ],
                                                         "quantity": {
@@ -107,24 +113,24 @@
                                                 ],
                                                 "product": {
                                                     "@type": "cdm.product.template.TransferableProduct",
-													"asset": {
-														"@type": "cdm.base.staticdata.asset.common.Cash",
-														"identifier": [
-															{
-																"identifier": {
-																	"@data": "GBP"
-																},
-																"identifierType": "CurrencyCode"
-															}
-														],
-														"partyRole": {
-															"partyReference": {
-																"@ref:external": "UKBroker"
-															},
-															"role": "Borrower"
-														},
-														"assetType": "Cash"
-													},
+                                                    "asset": {
+                                                        "@type": "cdm.base.staticdata.asset.common.Cash",
+                                                        "identifier": [
+                                                            {
+                                                                "identifier": {
+                                                                    "@data": "GBP"
+                                                                },
+                                                                "identifierType": "CurrencyCode"
+                                                            }
+                                                        ],
+                                                        "partyRole": {
+                                                            "partyReference": {
+                                                                "@ref:external": "UKBroker"
+                                                            },
+                                                            "role": "Borrower"
+                                                        },
+                                                        "assetType": "Cash"
+                                                    },
                                                     "economicTerms": {
                                                         "payout": [
                                                             {
@@ -139,7 +145,7 @@
                                                                     },
                                                                     "priceSchedule": [
                                                                         {
-                                                                            "@ref:scoped": "InterestRate-1"
+                                                                            "@ref:scoped": "RebateRate-1"
                                                                         }
                                                                     ]
                                                                 },
@@ -159,7 +165,27 @@
                                                             }
                                                         ]
                                                     },
-													"productPartyRole": "Party2"
+                                                    "productPartyRole": "Party2"
+                                                }
+                                            }
+                                        ],
+                                        "collateralBalance": [
+                                            {
+                                                "amountBaseCurrency": {
+                                                    "value": 10200000,
+                                                    "unit": {
+                                                        "currency": {
+                                                            "@data": "GBP"
+                                                        }
+                                                    }
+                                                },
+                                                "payerReceiver": {
+                                                    "payerPartyReference": {
+                                                        "@ref:external": "UKBroker"
+                                                    },
+                                                    "receiverPartyReference": {
+                                                        "@ref:external": "UKLender"
+                                                    }
                                                 }
                                             }
                                         ]
@@ -189,8 +215,13 @@
                         {
                             "price": [
                                 {
-                                    "@key:scoped": "InterestRate-1",
-                                    "value": 0.00555,
+                                    "@key:scoped": "RebateRate-1",
+                                    "datedValue": [
+                                        {
+                                            "date": "2026-01-26",
+                                            "value": 0.00555
+                                        }
+                                    ],
                                     "unit": {
                                         "currency": {
                                             "@data": "GBP"
@@ -201,7 +232,8 @@
                                             "@data": "GBP"
                                         }
                                     },
-                                    "priceType": "InterestRate"
+                                    "priceType": "InterestRate",
+                                    "priceSubType": "Rebate"
                                 }
                             ],
                             "quantity": {
