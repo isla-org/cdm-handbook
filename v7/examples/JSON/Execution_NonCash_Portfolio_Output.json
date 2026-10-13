@@ -1,7 +1,7 @@
 {
     "@model": "cdm",
     "@type": "cdm.event.common.BusinessEvent",
-    "@version": "7.5.0",
+    "@version": "7.6.0",
     "@key": "a5208adf",
     "eventDate": "2025-05-15",
     "effectiveDate": "2025-05-15",
@@ -36,14 +36,11 @@
                                     },
                                     "priceQuantity": {
                                         "quantitySchedule": {
-                                            "@ref:scoped": "AssetQuantity-1"
+                                            "@ref:scoped": "MarketValue-1"
                                         },
                                         "priceSchedule": [
                                             {
                                                 "@ref:scoped": "LendingFee-1"
-                                            },
-                                            {
-                                                "@ref:scoped": "AssetPrice-1"
                                             }
                                         ]
                                     },
@@ -189,7 +186,7 @@
                                 }
                             ],
                             "quantity": {
-                                "@key:scoped": "LoanValue-1",
+                                "@key:scoped": "MarketValue-1",
                                 "value": 9801100,
                                 "unit": {
                                     "currency": {
@@ -350,14 +347,11 @@
                                 },
                                 "priceQuantity": {
                                     "quantitySchedule": {
-                                        "@ref:scoped": "AssetQuantity-1"
+                                        "@ref:scoped": "MarketValue-1"
                                     },
                                     "priceSchedule": [
                                         {
                                             "@ref:scoped": "LendingFee-1"
-                                        },
-                                        {
-                                            "@ref:scoped": "AssetPrice-1"
                                         }
                                     ]
                                 },
@@ -505,7 +499,7 @@
                                     }
                                 ],
                                 "quantity": {
-                                    "@key:scoped": "LoanValue-1",
+                                    "@key:scoped": "MarketValue-1",
                                     "value": 9801100,
                                     "unit": {
                                         "currency": {
