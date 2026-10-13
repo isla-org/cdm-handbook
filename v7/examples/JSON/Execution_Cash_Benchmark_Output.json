@@ -1,8 +1,8 @@
 {
     "@model": "cdm",
     "@type": "cdm.event.common.BusinessEvent",
-    "@version": "7.2.0",
-    "@key": "3b5eee0f",
+    "@version": "7.6.0",
+    "@key": "ae1700e1",
     "eventDate": "2026-01-26",
     "effectiveDate": "2026-01-26",
     "instruction": [
@@ -98,7 +98,12 @@
                                                     {
                                                         "price": [
                                                             {
-                                                                "value": 0.003,
+                                                                "datedValue": [
+                                                                    {
+                                                                        "date": "2026-01-26",
+                                                                        "value": 0.003
+                                                                    }
+                                                                ],
                                                                 "unit": {
                                                                     "currency": {
                                                                         "@data": "GBP"
@@ -216,6 +221,26 @@
                                                     "productPartyRole": "Party2"
                                                 }
                                             }
+                                        ],
+                                        "collateralBalance": [
+                                            {
+                                                "amountBaseCurrency": {
+                                                    "value": 9997122,
+                                                    "unit": {
+                                                        "currency": {
+                                                            "@data": "GBP"
+                                                        }
+                                                    }
+                                                },
+                                                "payerReceiver": {
+                                                    "payerPartyReference": {
+                                                        "@ref:external": "UKBroker"
+                                                    },
+                                                    "receiverPartyReference": {
+                                                        "@ref:external": "UKLender"
+                                                    }
+                                                }
+                                            }
                                         ]
                                     }
                                 ],
@@ -244,7 +269,12 @@
                             "price": [
                                 {
                                     "@key:scoped": "Spread-1",
-                                    "value": 0.003,
+                                    "datedValue": [
+                                        {
+                                            "date": "2026-01-26",
+                                            "value": 0.003
+                                        }
+                                    ],
                                     "unit": {
                                         "currency": {
                                             "@data": "GBP"
@@ -510,7 +540,12 @@
                                                 {
                                                     "price": [
                                                         {
-                                                            "value": 0.003,
+                                                            "datedValue": [
+                                                                {
+                                                                    "date": "2026-01-26",
+                                                                    "value": 0.003
+                                                                }
+                                                            ],
                                                             "unit": {
                                                                 "currency": {
                                                                     "@data": "GBP"
@@ -628,6 +663,26 @@
                                                 "productPartyRole": "Party2"
                                             }
                                         }
+                                    ],
+                                    "collateralBalance": [
+                                        {
+                                            "amountBaseCurrency": {
+                                                "value": 9997122,
+                                                "unit": {
+                                                    "currency": {
+                                                        "@data": "GBP"
+                                                    }
+                                                }
+                                            },
+                                            "payerReceiver": {
+                                                "payerPartyReference": {
+                                                    "@ref:external": "UKBroker"
+                                                },
+                                                "receiverPartyReference": {
+                                                    "@ref:external": "UKLender"
+                                                }
+                                            }
+                                        }
                                     ]
                                 }
                             ],
@@ -658,7 +713,12 @@
                                 "price": [
                                     {
                                         "@key:scoped": "Spread-1",
-                                        "value": 0.003,
+                                        "datedValue": [
+                                            {
+                                                "date": "2026-01-26",
+                                                "value": 0.003
+                                            }
+                                        ],
                                         "unit": {
                                             "currency": {
                                                 "@data": "GBP"
