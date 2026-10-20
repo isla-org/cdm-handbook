@@ -9,39 +9,31 @@
                                 "counterparty": {
                                     "role": "Party2",
                                     "partyReference": {
-                                        "value": {
-                                            "partyId": [
-                                                {
-                                                    "identifier": {
-                                                        "value": "FUND1"
-                                                    }
+                                        "@key:external": "fund-1",
+                                        "partyId": [
+                                            {
+                                                "identifier": {
+                                                    "@data": "FUND1"
                                                 }
-                                            ],
-                                            "name": {
-                                                "value": "Fund 1"
-                                            },
-                                            "meta": {
-                                                "externalKey": "fund-1"
                                             }
+                                        ],
+                                        "name": {
+                                            "@data": "Fund 1"
                                         }
                                     }
                                 },
                                 "partyRole": {
                                     "partyReference": {
-                                        "value": {
-                                            "partyId": [
-                                                {
-                                                    "identifier": {
-                                                        "value": "FUND1"
-                                                    }
+                                        "@key:external": "fund-1",
+                                        "partyId": [
+                                            {
+                                                "identifier": {
+                                                    "@data": "FUND1"
                                                 }
-                                            ],
-                                            "name": {
-                                                "value": "Fund 1"
-                                            },
-                                            "meta": {
-                                                "externalKey": "fund-1"
                                             }
+                                        ],
+                                        "name": {
+                                            "@data": "Fund 1"
                                         }
                                     },
                                     "role": "BeneficialOwner"
@@ -49,24 +41,24 @@
                                 "tradeId": [
                                     {
                                         "issuer": {
-                                            "value": "KTKL"
+                                            "@data": "UKLender"
                                         },
                                         "assignedIdentifier": [
                                             {
                                                 "identifier": {
-                                                    "value": "0266001-1"
+                                                    "@data": "0266001-1"
                                                 }
                                             }
                                         ]
                                     },
                                     {
                                         "issuer": {
-                                            "value": "KTKL"
+                                            "@data": "UKLender"
                                         },
                                         "assignedIdentifier": [
                                             {
                                                 "identifier": {
-                                                    "value": "LEI12345ABCDE-20250922-TRADE001"
+                                                    "@data": "LEI12345ABCDE-20250922-TRADE001"
                                                 }
                                             }
                                         ],
@@ -77,26 +69,22 @@
                             "quantityChange": {
                                 "change": [
                                     {
-                                        "quantity": [
-                                            {
-                                                "value": {
-                                                    "value": 120000,
-                                                    "unit": {
-                                                        "financialUnit": "Share"
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "value": {
-                                                    "value": 3000000,
-                                                    "unit": {
-                                                        "currency": {
-                                                            "value": "USD"
-                                                        }
-                                                    }
+                                        "quantity": {
+                                            "value": 600000,
+                                            "unit": {
+                                                "financialUnit": "Share"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "quantity": {
+                                            "value": 6120000,
+                                            "unit": {
+                                                "currency": {
+                                                    "@data": "GBP"
                                                 }
                                             }
-                                        ]
+                                        }
                                     }
                                 ],
                                 "direction": "Replace"
@@ -107,39 +95,31 @@
                                 "counterparty": {
                                     "role": "Party2",
                                     "partyReference": {
-                                        "value": {
-                                            "partyId": [
-                                                {
-                                                    "identifier": {
-                                                        "value": "FUND2"
-                                                    }
+                                        "@key:external": "fund-2",
+                                        "partyId": [
+                                            {
+                                                "identifier": {
+                                                    "@data": "FUND2"
                                                 }
-                                            ],
-                                            "name": {
-                                                "value": "Fund 2"
-                                            },
-                                            "meta": {
-                                                "externalKey": "fund-2"
                                             }
+                                        ],
+                                        "name": {
+                                            "@data": "Fund 2"
                                         }
                                     }
                                 },
                                 "partyRole": {
                                     "partyReference": {
-                                        "value": {
-                                            "partyId": [
-                                                {
-                                                    "identifier": {
-                                                        "value": "FUND2"
-                                                    }
+                                        "@key:external": "fund-2",
+                                        "partyId": [
+                                            {
+                                                "identifier": {
+                                                    "@data": "FUND2"
                                                 }
-                                            ],
-                                            "name": {
-                                                "value": "Fund 2"
-                                            },
-                                            "meta": {
-                                                "externalKey": "fund-2"
                                             }
+                                        ],
+                                        "name": {
+                                            "@data": "Fund 2"
                                         }
                                     },
                                     "role": "BeneficialOwner"
@@ -147,24 +127,24 @@
                                 "tradeId": [
                                     {
                                         "issuer": {
-                                            "value": "FUND2"
+                                            "@data": "FUND2"
                                         },
                                         "assignedIdentifier": [
                                             {
                                                 "identifier": {
-                                                    "value": "0266001-2"
+                                                    "@data": "0266001-2"
                                                 }
                                             }
                                         ]
                                     },
                                     {
                                         "issuer": {
-                                            "value": "KTKL"
+                                            "@data": "UKLender"
                                         },
                                         "assignedIdentifier": [
                                             {
                                                 "identifier": {
-                                                    "value": "LEI12345ABCDE-20250922-TRADE002"
+                                                    "@data": "LEI12345ABCDE-20250922-TRADE002"
                                                 }
                                             }
                                         ],
@@ -175,26 +155,22 @@
                             "quantityChange": {
                                 "change": [
                                     {
-                                        "quantity": [
-                                            {
-                                                "value": {
-                                                    "value": 80000,
-                                                    "unit": {
-                                                        "financialUnit": "Share"
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "value": {
-                                                    "value": 2000000,
-                                                    "unit": {
-                                                        "currency": {
-                                                            "value": "USD"
-                                                        }
-                                                    }
+                                        "quantity": {
+                                            "value": 400000,
+                                            "unit": {
+                                                "financialUnit": "Share"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "quantity": {
+                                            "value": 4080000,
+                                            "unit": {
+                                                "currency": {
+                                                    "@data": "GBP"
                                                 }
                                             }
-                                        ]
+                                        }
                                     }
                                 ],
                                 "direction": "Replace"
@@ -204,485 +180,418 @@
                 }
             },
             "before": {
-                "value": {
-                    "trade": {
-                        "product": {
-                            "economicTerms": {
-                                "effectiveDate": {
-                                    "adjustableDate": {
-                                        "unadjustedDate": "2025-09-22",
-                                        "dateAdjustments": {
-                                            "businessDayConvention": "MODFOLLOWING",
-                                            "meta": {
-                                                "globalKey": "fa42f5cf"
-                                            }
-                                        },
-                                        "meta": {
-                                            "globalKey": "e742daa5"
-                                        }
-                                    },
-                                    "meta": {
-                                        "globalKey": "e742daa5"
+                "trade": {
+                    "product": {
+                        "taxonomy": [
+                            {
+                                "source": "ISDA",
+                                "value": {
+                                    "name": {
+                                        "@data": "SecurityLending"
                                     }
                                 },
-                                "terminationDate": {
-                                    "adjustableDate": {
-                                        "unadjustedDate": "2025-10-22",
-                                        "dateAdjustments": {
-                                            "businessDayConvention": "MODFOLLOWING",
-                                            "meta": {
-                                                "globalKey": "fa42f5cf"
-                                            }
-                                        },
-                                        "meta": {
-                                            "globalKey": "e743cae5"
-                                        }
+                                "calculated": true
+                            }
+                        ],
+                        "economicTerms": {
+                            "effectiveDate": {
+                                "adjustableDate": {
+                                    "unadjustedDate": "2025-09-22"
+                                }
+                            },
+							"terminationDate": {
+                                "adjustableDate": {
+                                    "unadjustedDate": "2025-10-22",
+                                    "dateAdjustments": {
+                                        "businessDayConvention": "MODFOLLOWING"
+                                    }
+                                }
+                            },
+                            "payout": [
+                                {
+                                    "@type": "cdm.product.template.AssetPayout",
+                                    "payerReceiver": {
+                                        "payer": "Party1",
+                                        "receiver": "Party2"
                                     },
-                                    "meta": {
-                                        "globalKey": "e743cae5"
-                                    }
-                                },
-                                "payout": [
-                                    {
-                                        "AssetPayout": {
-                                            "payerReceiver": {
-                                                "payer": "Party1",
-                                                "receiver": "Party2"
-                                            },
-                                            "priceQuantity": {
-                                                "quantitySchedule": {
-                                                    "address": {
-                                                        "scope": "DOCUMENT",
-                                                        "value": "LoanQuantity-1"
-                                                    }
-                                                },
-                                                "meta": {
-                                                    "globalKey": "0"
-                                                }
-                                            },
-                                            "assetLeg": [
-                                                {
-                                                    "settlementDate": {
-                                                        "adjustableDate": {
-                                                            "dateAdjustments": {
-                                                                "businessDayConvention": "NONE",
-                                                                "meta": {
-                                                                    "globalKey": "24a738"
-                                                                }
-                                                            },
-                                                            "adjustedDate": {
-                                                                "value": "2025-09-22",
-                                                                "meta": {
-                                                                    "globalKey": "3f2256"
-                                                                }
-                                                            },
-                                                            "meta": {
-                                                                "globalKey": "24a738"
-                                                            }
-                                                        },
-                                                        "meta": {
-                                                            "globalKey": "24a738"
-                                                        }
-                                                    },
-                                                    "deliveryMethod": "DeliveryVersusPayment"
-                                                },
-                                                {
-                                                    "settlementDate": {
-                                                        "adjustableDate": {
-                                                            "dateAdjustments": {
-                                                                "businessDayConvention": "NONE",
-                                                                "meta": {
-                                                                    "globalKey": "24a738"
-                                                                }
-                                                            },
-                                                            "adjustedDate": {
-                                                                "value": "2025-10-22",
-                                                                "meta": {
-                                                                    "globalKey": "3f2296"
-                                                                }
-                                                            },
-                                                            "meta": {
-                                                                "globalKey": "24a738"
-                                                            }
-                                                        },
-                                                        "meta": {
-                                                            "globalKey": "24a738"
-                                                        }
-                                                    },
-                                                    "deliveryMethod": "DeliveryVersusPayment"
-                                                }
-                                            ],
-                                            "underlier": {
-                                                "Instrument": {
-                                                    "Security": {
-                                                        "identifier": [
-                                                            {
-                                                                "identifier": {
-                                                                    "value": "ST001"
-                                                                },
-                                                                "identifierType": "SEDOL"
-                                                            }
-                                                        ],
-                                                        "assetType": "Security",
-                                                        "securityType": "Equity"
-                                                    }
-                                                }
-                                            },
-                                            "minimumFee": {
-                                                "value": 0,
-                                                "unit": {
-                                                    "currency": {
-                                                        "value": "USD"
-                                                    }
-                                                },
-                                                "meta": {
-                                                    "globalKey": "171b36"
-                                                }
-                                            },
-                                            "dividendTerms": {
-                                                "manufacturedIncomeRequirement": {
-                                                    "totalRatio": 1
-                                                }
+                                    "priceQuantity": {
+                                        "quantitySchedule": {
+                                            "@ref:scoped": "AssetQuantity-1"
+                                        },
+                                        "priceSchedule": [
+                                            {
+                                                "@ref:scoped": "AssetPrice-1"
+                                            }
+                                        ]
+                                    },
+                                    "settlementTerms": {
+                                        "settlementType": "Physical",
+                                        "settlementDate": {
+                                            "adjustableOrRelativeDate": {
+                                                "unadjustedDate": "2025-09-22"
                                             }
                                         },
-                                        "meta": {
-                                            "globalKey": "b78e4420"
-                                        }
-                                    }
-                                ],
-                                "collateral": {
-                                    "collateralPortfolio": [
+                                        "securitySettlementCentre": "SecuritySettlementCentre",
+                                        "cashSettlementCentre": "CashSettlementCentre"
+                                    },
+                                    "assetLeg": [
                                         {
-                                            "value": {
-                                                "collateralPosition": [
+                                            "settlementDate": {
+                                                "adjustableDate": {
+                                                    "adjustedDate": {
+                                                        "@data": "2025-09-22"
+                                                    }
+                                                }
+                                            },
+                                            "deliveryMethod": "DeliveryVersusPayment"
+                                        }
+                                    ],
+                                    "underlier": {
+                                        "@type": "cdm.base.staticdata.asset.common.Security",
+                                        "identifier": [
+                                            {
+                                                "identifier": {
+                                                    "@data": "GB00BDR05C01"
+                                                },
+                                                "identifierType": "ISIN"
+                                            }
+                                        ],
+                                        "assetType": "Security",
+                                        "securityType": "Equity"
+                                    },
+                                    "minimumFee": {
+                                        "value": 50,
+                                        "unit": {
+                                            "currency": {
+                                                "@data": "USD"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "collateral": {
+                                "collateralPortfolio": [
+                                    {
+                                        "collateralPosition": [
+                                            {
+                                                "priceQuantity": [
                                                     {
-                                                        "priceQuantity": [
+                                                        "price": [
                                                             {
-                                                                "price": [
+                                                                "datedValue": [
                                                                     {
-                                                                        "value": {
-                                                                            "value": 0.01,
-                                                                            "unit": {
-                                                                                "currency": {
-                                                                                    "value": "GBP"
-                                                                                }
-                                                                            },
-                                                                            "perUnitOf": {
-                                                                                "currency": {
-                                                                                    "value": "GBP"
-                                                                                }
-                                                                            },
-                                                                            "priceType": "InterestRate"
-                                                                        }
+                                                                        "date": "2025-09-22",
+                                                                        "value": 0.00555
                                                                     }
                                                                 ],
-                                                                "quantity": [
-                                                                    {
-                                                                        "value": {
-                                                                            "value": 3823550,
-                                                                            "unit": {
-                                                                                "currency": {
-                                                                                    "value": "GBP"
-                                                                                }
-                                                                            }
-                                                                        }
+                                                                "unit": {
+                                                                    "currency": {
+                                                                        "@data": "GBP"
                                                                     }
-                                                                ],
-                                                                "meta": {
-                                                                    "globalKey": "e2ea69d8"
-                                                                }
+                                                                },
+                                                                "perUnitOf": {
+                                                                    "currency": {
+                                                                        "@data": "GBP"
+                                                                    }
+                                                                },
+                                                                "priceType": "InterestRate",
+                                                                "priceSubType": "Rebate"
                                                             }
                                                         ],
-                                                        "product": {
-                                                            "TransferableProduct": {
-                                                                "Cash": {
-                                                                    "assetType": "Cash",
-                                                                    "identifier": [
-                                                                        {
-                                                                            "identifier": {
-                                                                                "value": "GBP"
-                                                                            },
-                                                                            "identifierType": "CurrencyCode"
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                "economicTerms": {
-                                                                    "payout": [
-                                                                        {
-                                                                            "InterestRatePayout": {
-                                                                                "payerReceiver": {
-                                                                                    "payer": "Party1",
-                                                                                    "receiver": "Party2"
-                                                                                },
-                                                                                "priceQuantity": {
-                                                                                    "quantitySchedule": {
-                                                                                        "address": {
-                                                                                            "scope": "DOCUMENT",
-                                                                                            "value": "LoanValue-1"
-                                                                                        }
-                                                                                    },
-                                                                                    "priceSchedule": [
-                                                                                        {
-                                                                                            "address": {
-                                                                                                "scope": "DOCUMENT",
-                                                                                                "value": "InterestRate-1"
-                                                                                            }
-                                                                                        }
-                                                                                    ],
-                                                                                    "meta": {
-                                                                                        "globalKey": "0"
-                                                                                    }
-                                                                                }
-                                                                            },
-                                                                            "meta": {
-                                                                                "globalKey": "b141411f"
-                                                                            }
-                                                                        }
-                                                                    ]
+                                                        "quantity": {
+                                                            "value": 10200000,
+                                                            "unit": {
+                                                                "currency": {
+                                                                    "@data": "GBP"
                                                                 }
                                                             }
                                                         }
                                                     }
                                                 ],
-                                                "meta": {
-                                                    "globalKey": "2145f111"
+                                                "product": {
+                                                    "@type": "cdm.product.template.TransferableProduct",
+                                                    "asset": {
+                                                        "@type": "cdm.base.staticdata.asset.common.Cash",
+                                                        "identifier": [
+                                                            {
+                                                                "identifier": {
+                                                                    "@data": "GBP"
+                                                                },
+                                                                "identifierType": "CurrencyCode"
+                                                            }
+                                                        ],
+                                                        "partyRole": {
+                                                            "partyReference": {
+                                                                "@ref:external": "UKBroker"
+                                                            },
+                                                            "role": "Borrower"
+                                                        },
+                                                        "assetType": "Cash"
+                                                    },
+                                                    "economicTerms": {
+                                                        "payout": [
+                                                            {
+                                                                "@type": "cdm.product.asset.InterestRatePayout",
+                                                                "payerReceiver": {
+                                                                    "payer": "Party2",
+                                                                    "receiver": "Party1"
+                                                                },
+                                                                "priceQuantity": {
+                                                                    "quantitySchedule": {
+                                                                        "@ref:scoped": "CollateralValue-1"
+                                                                    },
+                                                                    "priceSchedule": [
+                                                                        {
+                                                                            "@ref:scoped": "RebateRate-1"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "settlementTerms": {
+                                                                    "settlementType": "Cash",
+                                                                    "transferSettlementType": "DeliveryVersusPayment",
+                                                                    "settlementDate": {
+                                                                        "adjustableDates": {
+                                                                            "adjustedDate": [
+                                                                                {
+                                                                                    "@data": "2025-09-22"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    "productPartyRole": "Party2"
                                                 }
                                             }
-                                        }
-                                    ],
-                                    "collateralProvisions": {
-                                        "collateralType": "Cash"
-                                    },
-                                    "meta": {
-                                        "globalKey": "e7ad6404"
-                                    }
-                                }
-                            },
-                            "meta": {
-                                "globalKey": "f3199a4b"
-                            }
-                        },
-                        "tradeLot": [
-                            {
-                                "priceQuantity": [
-                                    {
-                                        "price": [
+                                        ],
+                                        "collateralBalance": [
                                             {
-                                                "value": {
-                                                    "value": 25,
+                                                "amountBaseCurrency": {
+                                                    "value": 10200000,
                                                     "unit": {
                                                         "currency": {
-                                                            "value": "USD"
-                                                        }
-                                                    },
-                                                    "perUnitOf": {
-                                                        "financialUnit": "Share"
-                                                    },
-                                                    "priceType": "AssetPrice"
-                                                },
-                                                "meta": {
-                                                    "location": [
-                                                        {
-                                                            "scope": "DOCUMENT",
-                                                            "value": "AssetPrice-1"
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        ],
-                                        "quantity": [
-                                            {
-                                                "value": {
-                                                    "value": 200000,
-                                                    "unit": {
-                                                        "financialUnit": "Share"
-                                                    }
-                                                },
-                                                "meta": {
-                                                    "location": [
-                                                        {
-                                                            "scope": "DOCUMENT",
-                                                            "value": "LoanQuantity-1"
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        ],
-                                        "observable": {
-                                            "value": {
-                                                "Asset": {
-                                                    "Instrument": {
-                                                        "Security": {
-                                                            "identifier": [
-                                                                {
-                                                                    "identifier": {
-                                                                        "value": "ST001"
-                                                                    },
-                                                                    "identifierType": "SEDOL"
-                                                                }
-                                                            ],
-                                                            "assetType": "Security",
-                                                            "securityType": "Equity"
+                                                            "@data": "GBP"
                                                         }
                                                     }
+                                                },
+                                                "payerReceiver": {
+                                                    "payerPartyReference": {
+                                                        "@ref:external": "UKBroker"
+                                                    },
+                                                    "receiverPartyReference": {
+                                                        "@ref:external": "UKLender"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "collateralProvisions": {
+                                    "collateralType": "Cash",
+                                    "eligibleCollateral": [
+                                        {
+                                            "collateralCriteria": {
+                                                "@type": "cdm.base.staticdata.asset.common.AssetType",
+                                                "assetType": "Cash"
+                                            },
+                                            "treatment": {
+                                                "valuationTreatment": {
+                                                    "marginPercentage": 1.02
+                                                },
+                                                "isIncluded": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "tradeLot": [
+                        {
+                            "priceQuantity": [
+                                {
+                                    "price": [
+                                        {
+                                            "@key:scoped": "RebateRate-1",
+                                            "datedValue": [
+                                                {
+                                                    "date": "2025-09-22",
+                                                    "value": 0.00555
+                                                }
+                                            ],
+                                            "unit": {
+                                                "currency": {
+                                                    "@data": "GBP"
                                                 }
                                             },
-                                            "meta": {
-                                                "location": [
-                                                    {
-                                                        "scope": "DOCUMENT",
-                                                        "value": "Observable-1"
-                                                    }
-                                                ]
+                                            "perUnitOf": {
+                                                "currency": {
+                                                    "@data": "GBP"
+                                                }
+                                            },
+                                            "priceType": "InterestRate",
+                                            "priceSubType": "Rebate"
+                                        }
+                                    ],
+                                    "quantity": {
+                                        "@key:scoped": "CollateralValue-1",
+                                        "value": 10200000,
+                                        "unit": {
+                                            "currency": {
+                                                "@data": "GBP"
                                             }
-                                        },
-                                        "meta": {
-                                            "globalKey": "a1221f6f"
+                                        }
+                                    }
+                                },
+                                {
+                                    "price": [
+                                        {
+                                            "@key:scoped": "AssetPrice-1",
+                                            "value": 10,
+                                            "unit": {
+                                                "currency": {
+                                                    "@data": "GBP"
+                                                }
+                                            },
+                                            "perUnitOf": {
+                                                "financialUnit": "Share"
+                                            },
+                                            "priceType": "AssetPrice"
+                                        }
+                                    ],
+                                    "quantity": {
+                                        "@key:scoped": "AssetQuantity-1",
+                                        "value": 1000000,
+                                        "unit": {
+                                            "financialUnit": "Share"
                                         }
                                     },
-                                    {
-                                        "price": [
-                                            {
-                                                "value": {
-                                                    "value": 0.01,
-                                                    "unit": {
-                                                        "currency": {
-                                                            "value": "USD"
-                                                        }
+                                    "observable": {
+                                        "@key:scoped": "Observable-1",
+                                        "@data": {
+                                            "@type": "cdm.base.staticdata.asset.common.Security",
+                                            "identifier": [
+                                                {
+                                                    "identifier": {
+                                                        "@data": "GB00BDR05C01"
                                                     },
-                                                    "perUnitOf": {
-                                                        "currency": {
-                                                            "value": "USD"
-                                                        }
-                                                    },
-                                                    "priceType": "InterestRate"
-                                                },
-                                                "meta": {
-                                                    "location": [
-                                                        {
-                                                            "scope": "DOCUMENT",
-                                                            "value": "InterestRate-1"
-                                                        }
-                                                    ]
+                                                    "identifierType": "ISIN"
                                                 }
-                                            }
-                                        ],
-                                        "quantity": [
-                                            {
-                                                "value": {
-                                                    "value": 5000000,
-                                                    "unit": {
-                                                        "currency": {
-                                                            "value": "USD"
-                                                        }
-                                                    }
-                                                },
-                                                "meta": {
-                                                    "location": [
-                                                        {
-                                                            "scope": "DOCUMENT",
-                                                            "value": "LoanValue-1"
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        ],
-                                        "meta": {
-                                            "globalKey": "e41b7a85"
+                                            ],
+                                            "assetType": "Security",
+                                            "securityType": "Equity"
                                         }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "counterparty": [
+                        {
+                            "role": "Party1",
+                            "partyReference": {
+                                "@ref:external": "UKLender"
+                            }
+                        },
+                        {
+                            "role": "Party2",
+                            "partyReference": {
+                                "@ref:external": "UKBroker"
+                            }
+                        }
+                    ],
+                    "tradeIdentifier": [
+                        {
+                            "issuer": {
+                                "@data": "UK Broker"
+                            },
+                            "assignedIdentifier": [
+                                {
+                                    "identifier": {
+                                        "@data": "20445678222"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "tradeDate": {
+                        "@data": "2025-09-22"
+                    },
+                    "party": [
+                        {
+                            "@key:external": "UKLender",
+                            "partyId": [
+                                {
+                                    "identifier": {
+                                        "@data": "FM1LEI11111111111111"
+                                    }
+                                }
+                            ],
+                            "name": {
+                                "@data": "UK Lender"
+                            }
+                        },
+                        {
+                            "@key:external": "UKBroker",
+                            "partyId": [
+                                {
+                                    "identifier": {
+                                        "@data": "CP001LEI111111111111"
+                                    }
+                                }
+                            ],
+                            "name": {
+                                "@data": "UK Broker"
+                            }
+                        }
+                    ],
+                    "partyRole": [
+                        {
+                            "partyReference": {
+                                "@ref:external": "UKLender"
+                            },
+                            "role": "Lender"
+                        },
+                        {
+                            "partyReference": {
+                                "@ref:external": "UKBroker"
+                            },
+                            "role": "Borrower"
+                        }
+                    ],
+                    "executionDetails": {
+                        "executionType": "OnVenue"
+                    },
+                    "contractDetails": {
+                        "documentation": [
+                            {
+                                "agreementDate": "2020-01-01",
+                                "legalAgreementIdentification": {
+                                    "agreementName": {
+                                        "agreementType": "MasterAgreement",
+                                        "masterAgreementType": {
+                                            "@data": "GMSLA"
+                                        }
+                                    },
+                                    "publisher": "ISLA",
+                                    "vintage": 2018
+                                },
+                                "contractualParty": [
+                                    {
+                                        "@ref:external": "UKBroker"
+                                    },
+                                    {
+                                        "@ref:external": "UKLender"
                                     }
                                 ]
                             }
-                        ],
-                        "counterparty": [
-                            {
-                                "role": "Party1",
-                                "partyReference": {
-                                    "globalReference": "3a97bd6c",
-                                    "externalReference": "AgentLender"
-                                }
-                            },
-                            {
-                                "role": "Party2",
-                                "partyReference": {
-                                    "globalReference": "2e189ef",
-                                    "externalReference": "Borrower"
-                                }
-                            }
-                        ],
-                        "tradeIdentifier": [
-                            {
-                                "issuer": {
-                                    "value": "KTKL"
-                                },
-                                "assignedIdentifier": [
-                                    {
-                                        "identifier": {
-                                            "value": "0266001"
-                                        }
-                                    }
-                                ],
-                                "meta": {
-                                    "globalKey": "569d85e5"
-                                }
-                            }
-                        ],
-                        "tradeDate": {
-                            "value": "2025-09-22",
-                            "meta": {
-                                "globalKey": "3f2255"
-                            }
-                        },
-                        "party": [
-                            {
-                                "partyId": [
-                                    {
-                                        "identifier": {
-                                            "value": "KTKLLEILLLLLLLLLLLLL"
-                                        },
-                                        "meta": {
-                                            "globalKey": "60098fe6"
-                                        }
-                                    }
-                                ],
-                                "name": {
-                                    "value": "KTKL(AgentLender)"
-                                },
-                                "meta": {
-                                    "globalKey": "3a97bd6c",
-                                    "externalKey": "AgentLender"
-                                }
-                            },
-                            {
-                                "partyId": [
-                                    {
-                                        "identifier": {
-                                            "value": "CP001LEI111111111111"
-                                        },
-                                        "meta": {
-                                            "globalKey": "12818f8c"
-                                        }
-                                    }
-                                ],
-                                "name": {
-                                    "value": "CP001(Borrower)"
-                                },
-                                "meta": {
-                                    "globalKey": "2e189ef",
-                                    "externalKey": "Borrower"
-                                }
-                            }
-                        ],
-                        "meta": {
-                            "globalKey": "49c53329"
-                        }
-                    },
-                    "state": {
-                        "positionState": "Executed"
-                    },
-                    "meta": {
-                        "globalKey": "95b0f478"
+                        ]
                     }
+                },
+                "state": {
+                    "positionState": "Executed"
                 }
             }
         }
