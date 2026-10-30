@@ -1,7 +1,8 @@
 {
     "@model": "cdm",
     "@type": "cdm.event.common.TradeState",
-    "@version": "7.5.0",
+    "@version": "7.8.0",
+    "@key": "f86d5b8e",
     "trade": {
         "product": {
             "taxonomy": [
@@ -30,9 +31,12 @@
                         },
                         "priceQuantity": {
                             "quantitySchedule": {
-                                "@ref:scoped": "MarketValue-1"
+                                "@ref:scoped": "AssetQuantity-1"
                             },
                             "priceSchedule": [
+                                {
+                                    "@ref:scoped": "AssetPrice-1"
+                                },
                                 {
                                     "@ref:scoped": "LendingFee-1"
                                 }
