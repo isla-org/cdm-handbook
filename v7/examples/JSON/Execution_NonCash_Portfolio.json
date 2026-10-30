@@ -19,9 +19,12 @@
                                     },
                                     "priceQuantity": {
                                         "quantitySchedule": {
-                                            "@ref:scoped": "MarketValue-1"
+                                            "@ref:scoped": "AssetQuantity-1"
                                         },
                                         "priceSchedule": [
+                                            {
+                                                "@ref:scoped": "AssetPrice-1"
+                                            },
                                             {
                                                 "@ref:scoped": "LendingFee-1"
                                             }
