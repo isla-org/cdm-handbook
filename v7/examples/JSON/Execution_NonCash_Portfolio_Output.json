@@ -1,7 +1,7 @@
 {
     "@model": "cdm",
     "@type": "cdm.event.common.BusinessEvent",
-    "@version": "7.6.0",
+    "@version": "7.8.0",
     "@key": "a5208adf",
     "eventDate": "2025-05-15",
     "effectiveDate": "2025-05-15",
@@ -36,9 +36,12 @@
                                     },
                                     "priceQuantity": {
                                         "quantitySchedule": {
-                                            "@ref:scoped": "MarketValue-1"
+                                            "@ref:scoped": "AssetQuantity-1"
                                         },
                                         "priceSchedule": [
+                                            {
+                                                "@ref:scoped": "AssetPrice-1"
+                                            },
                                             {
                                                 "@ref:scoped": "LendingFee-1"
                                             }
@@ -347,9 +350,12 @@
                                 },
                                 "priceQuantity": {
                                     "quantitySchedule": {
-                                        "@ref:scoped": "MarketValue-1"
+                                        "@ref:scoped": "AssetQuantity-1"
                                     },
                                     "priceSchedule": [
+                                        {
+                                            "@ref:scoped": "AssetPrice-1"
+                                        },
                                         {
                                             "@ref:scoped": "LendingFee-1"
                                         }
